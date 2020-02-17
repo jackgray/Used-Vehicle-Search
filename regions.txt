@@ -1,0 +1,244 @@
+<ul class="menu collapsible"><li class="expand s"><h5 class="ban">nearby cl</h5><ul class="acitem">
+<li class="s"><a href="//albany.craigslist.org/">albany</a>
+</li><li class="s"><a href="//allentown.craigslist.org/">allentown</a>
+</li><li class="s"><a href="//baltimore.craigslist.org/">baltimore</a>
+</li><li class="s"><a href="//binghamton.craigslist.org/">binghamton</a>
+</li><li class="s"><a href="//catskills.craigslist.org/">catskills</a>
+</li><li class="s"><a href="//cnj.craigslist.org/">central nj</a>
+</li><li class="s"><a href="//delaware.craigslist.org/">delaware</a>
+</li><li class="s"><a href="//newlondon.craigslist.org/">eastern ct</a>
+</li><li class="s"><a href="//easternshore.craigslist.org/">eastern shore</a>
+</li><li class="s"><a href="//harrisburg.craigslist.org/">harrisburg</a>
+</li><li class="s"><a href="//hartford.craigslist.org/">hartford</a>
+</li><li class="s"><a href="//hudsonvalley.craigslist.org/">hudson valley</a>
+</li><li class="s"><a href="//jerseyshore.craigslist.org/">jersey shore</a>
+</li><li class="s"><a href="//lancaster.craigslist.org/">lancaster</a>
+</li><li class="s"><a href="//longisland.craigslist.org/">long island</a>
+</li><li class="s"><a href="//newhaven.craigslist.org/">new haven</a>
+</li><li class="s"><a href="//newjersey.craigslist.org/">north jersey</a>
+</li><li class="s"><a href="//nwct.craigslist.org/">northwest ct</a>
+</li><li class="s"><a href="//oneonta.craigslist.org/">oneonta</a>
+</li><li class="s"><a href="//philadelphia.craigslist.org/">philadelphia</a>
+</li><li class="s"><a href="//poconos.craigslist.org/">poconos</a>
+</li><li class="s"><a href="//reading.craigslist.org/">reading</a>
+</li><li class="s"><a href="//providence.craigslist.org/">rhode island</a>
+</li><li class="s"><a href="//scranton.craigslist.org/">scranton</a>
+</li><li class="s"><a href="//southcoast.craigslist.org/">south coast</a>
+</li><li class="s"><a href="//southjersey.craigslist.org/">south jersey</a>
+</li><li class="s"><a href="//westernmass.craigslist.org/">western mass</a>
+</li><li class="s"><a href="//williamsport.craigslist.org/">williamsport</a>
+</li><li class="s"><a href="//worcester.craigslist.org/">worcester</a>
+</li><li class="s"><a href="//york.craigslist.org/">york</a>
+</li></ul>
+</li><li class="s"><h5 class="ban">us cities</h5><ul class="acitem">
+<li><a href="http://atlanta.craigslist.org/">atlanta</a>
+</li><li><a href="http://austin.craigslist.org/">austin</a>
+</li><li><a href="http://boston.craigslist.org/">boston</a>
+</li><li><a href="http://chicago.craigslist.org/">chicago</a>
+</li><li><a href="http://dallas.craigslist.org/">dallas</a>
+</li><li><a href="http://denver.craigslist.org/">denver</a>
+</li><li><a href="http://detroit.craigslist.org/">detroit</a>
+</li><li><a href="http://houston.craigslist.org/">houston</a>
+</li><li><a href="http://lasvegas.craigslist.org/">las vegas</a>
+</li><li><a href="http://losangeles.craigslist.org/">los angeles</a>
+</li><li><a href="http://miami.craigslist.org/">miami</a>
+</li><li><a href="http://minneapolis.craigslist.org/">minneapolis</a>
+</li><li><a href="http://newyork.craigslist.org/">new york</a>
+</li><li><a href="http://orangecounty.craigslist.org/">orange co</a>
+</li><li><a href="http://philadelphia.craigslist.org/">philadelphia</a>
+</li><li><a href="http://phoenix.craigslist.org/">phoenix</a>
+</li><li><a href="http://portland.craigslist.org/">portland</a>
+</li><li><a href="http://raleigh.craigslist.org/">raleigh</a>
+</li><li><a href="http://sacramento.craigslist.org/">sacramento</a>
+</li><li><a href="http://sandiego.craigslist.org/">san diego</a>
+</li><li><a href="http://seattle.craigslist.org/">seattle</a>
+</li><li><a href="http://sfbay.craigslist.org/">sf bayarea</a>
+</li><li><a href="http://washingtondc.craigslist.org/">wash dc</a>
+</li><li class="s more"><a href="//geo.craigslist.org/iso/us">more ...</a></li>
+</ul>
+</li><li class=""><h5 class="ban">us states</h5><ul class="acitem">
+<li><a href="//geo.craigslist.org/iso/us/al">alabama</a>
+</li><li><a href="//geo.craigslist.org/iso/us/ak">alaska</a>
+</li><li><a href="//geo.craigslist.org/iso/us/az">arizona</a>
+</li><li><a href="//geo.craigslist.org/iso/us/ar">arkansas</a>
+</li><li><a href="//geo.craigslist.org/iso/us/ca">california</a>
+</li><li><a href="//geo.craigslist.org/iso/us/co">colorado</a>
+</li><li><a href="//geo.craigslist.org/iso/us/ct">connecticut</a>
+</li><li><a href="//geo.craigslist.org/iso/us/dc">dc</a>
+</li><li><a href="//geo.craigslist.org/iso/us/de">delaware</a>
+</li><li><a href="//geo.craigslist.org/iso/us/fl">florida</a>
+</li><li><a href="//geo.craigslist.org/iso/us/ga">georgia</a>
+</li><li><a href="//geo.craigslist.org/iso/gu">guam</a>
+</li><li><a href="//geo.craigslist.org/iso/us/hi">hawaii</a>
+</li><li><a href="//geo.craigslist.org/iso/us/id">idaho</a>
+</li><li><a href="//geo.craigslist.org/iso/us/il">illinois</a>
+</li><li><a href="//geo.craigslist.org/iso/us/in">indiana</a>
+</li><li><a href="//geo.craigslist.org/iso/us/ia">iowa</a>
+</li><li><a href="//geo.craigslist.org/iso/us/ks">kansas</a>
+</li><li><a href="//geo.craigslist.org/iso/us/ky">kentucky</a>
+</li><li><a href="//geo.craigslist.org/iso/us/la">louisiana</a>
+</li><li><a href="//geo.craigslist.org/iso/us/me">maine</a>
+</li><li><a href="//geo.craigslist.org/iso/us/md">maryland</a>
+</li><li><a href="//geo.craigslist.org/iso/us/ma">mass</a>
+</li><li><a href="//geo.craigslist.org/iso/us/mi">michigan</a>
+</li><li><a href="//geo.craigslist.org/iso/us/mn">minnesota</a>
+</li><li><a href="//geo.craigslist.org/iso/us/ms">mississippi</a>
+</li><li><a href="//geo.craigslist.org/iso/us/mo">missouri</a>
+</li><li><a href="//geo.craigslist.org/iso/us/mt">montana</a>
+</li><li><a href="//geo.craigslist.org/iso/us/nc">n carolina</a>
+</li><li><a href="//geo.craigslist.org/iso/us/ne">nebraska</a>
+</li><li><a href="//geo.craigslist.org/iso/us/nv">nevada</a>
+</li><li><a href="//geo.craigslist.org/iso/us/nj">new jersey</a>
+</li><li><a href="//geo.craigslist.org/iso/us/nm">new mexico</a>
+</li><li><a href="//geo.craigslist.org/iso/us/ny">new york</a>
+</li><li><a href="//geo.craigslist.org/iso/us/nh">n hampshire</a>
+</li><li><a href="//geo.craigslist.org/iso/us/nd">north dakota</a>
+</li><li><a href="//geo.craigslist.org/iso/us/oh">ohio</a>
+</li><li><a href="//geo.craigslist.org/iso/us/ok">oklahoma</a>
+</li><li><a href="//geo.craigslist.org/iso/us/or">oregon</a>
+</li><li><a href="//geo.craigslist.org/iso/us/pa">pennsylvania</a>
+</li><li><a href="//geo.craigslist.org/iso/pr">puerto rico</a>
+</li><li><a href="//geo.craigslist.org/iso/us/ri">rhode island</a>
+</li><li><a href="//geo.craigslist.org/iso/us/sc">s carolina</a>
+</li><li><a href="//geo.craigslist.org/iso/us/sd">south dakota</a>
+</li><li><a href="//geo.craigslist.org/iso/us/tn">tennessee</a>
+</li><li><a href="//geo.craigslist.org/iso/us/tx">texas</a>
+</li><li><a href="//geo.craigslist.org/iso/us/ut">utah</a>
+</li><li><a href="//geo.craigslist.org/iso/us/vt">vermont</a>
+</li><li><a href="//geo.craigslist.org/iso/us/va">virginia</a>
+</li><li><a href="//geo.craigslist.org/iso/us/wa">washington</a>
+</li><li><a href="//geo.craigslist.org/iso/us/wv">west virginia</a>
+</li><li><a href="//geo.craigslist.org/iso/us/wi">wisconsin</a>
+</li><li><a href="//geo.craigslist.org/iso/us/wy">wyoming</a>
+</li><li class="s more"><a href="//geo.craigslist.org/iso/us">more ...</a></li>
+</ul>
+</li><li class="s"><h5 class="ban">canada</h5><ul class="acitem">
+<li><a href="//calgary.craigslist.org/">calgary</a>
+</li><li><a href="//edmonton.craigslist.org/">edmonton</a>
+</li><li><a href="//halifax.craigslist.org/">halifax</a>
+</li><li><a href="//montreal.craigslist.org/">montreal</a>
+</li><li><a href="//ottawa.craigslist.org/">ottawa</a>
+</li><li><a href="//saskatoon.craigslist.org/">saskatoon</a>
+</li><li><a href="//toronto.craigslist.org/">toronto</a>
+</li><li><a href="//vancouver.craigslist.org/">vancouver</a>
+</li><li><a href="//victoria.craigslist.org/">victoria</a>
+</li><li><a href="//winnipeg.craigslist.org/">winnipeg</a>
+</li><li class="s more"><a href="//geo.craigslist.org/iso/ca">more ...</a></li>
+</ul>
+</li><li><h5 class="ban">cl worldwide</h5><ul class="acitem collapsible">
+<li class="cont s">
+<h5>africa</h5>
+<ul class="acitem">
+<li><a href="//geo.craigslist.org/iso/eg">egypt</a>
+</li><li><a href="//geo.craigslist.org/iso/et">ethiopia</a>
+</li><li><a href="//geo.craigslist.org/iso/gh">ghana</a>
+</li><li><a href="//geo.craigslist.org/iso/ke">kenya</a>
+</li><li><a href="//geo.craigslist.org/iso/ma">morocco</a>
+</li><li><a href="//geo.craigslist.org/iso/za">south africa</a>
+</li><li><a href="//geo.craigslist.org/iso/tn">tunisia</a>
+</li></ul></li>
+<li class="cont s">
+<h5>americas</h5>
+<ul class="acitem">
+<li><a href="//geo.craigslist.org/iso/ar">argentina</a>
+</li><li><a href="//geo.craigslist.org/iso/bo">bolivia</a>
+</li><li><a href="http://rio.craigslist.org/">brazil</a>
+</li><li><a href="https://www.craigslist.org/about/sites#CA">canada</a>
+</li><li><a href="//geo.craigslist.org/iso/cl">chile</a>
+</li><li><a href="//geo.craigslist.org/iso/co">colombia</a>
+</li><li><a href="//geo.craigslist.org/iso/cr">costa rica</a>
+</li><li><a href="//geo.craigslist.org/iso/do">dom republic</a>
+</li><li><a href="//geo.craigslist.org/iso/ec">ecuador</a>
+</li><li><a href="//geo.craigslist.org/iso/sv">el salvador</a>
+</li><li><a href="//geo.craigslist.org/iso/gt">guatemala</a>
+</li><li><a href="http://mexicocity.craigslist.org/">mexico</a>
+</li><li><a href="//geo.craigslist.org/iso/ni">nicaragua</a>
+</li><li><a href="//geo.craigslist.org/iso/pa">panama</a>
+</li><li><a href="//geo.craigslist.org/iso/pe">peru</a>
+</li><li><a href="//geo.craigslist.org/iso/pr">puerto rico</a>
+</li><li><a href="https://www.craigslist.org/about/sites#US">united states</a>
+</li><li><a href="//geo.craigslist.org/iso/uy">uruguay</a>
+</li><li><a href="//geo.craigslist.org/iso/vi">us virgin islands</a>
+</li><li><a href="//geo.craigslist.org/iso/ve">venezuela</a>
+</li></ul></li>
+<li class="cont s">
+<h5>asia</h5>
+<ul class="acitem">
+<li><a href="//geo.craigslist.org/iso/bd">bangladesh</a>
+</li><li><a href="http://shanghai.craigslist.org/">china</a>
+</li><li><a href="//geo.craigslist.org/iso/hk">hong kong</a>
+</li><li><a href="http://bangalore.craigslist.org/">india</a>
+</li><li><a href="//geo.craigslist.org/iso/id">indonesia</a>
+</li><li><a href="//geo.craigslist.org/iso/ir">iran</a>
+</li><li><a href="//geo.craigslist.org/iso/iq">iraq</a>
+</li><li><a href="http://telaviv.craigslist.org/">israel</a>
+</li><li><a href="http://tokyo.craigslist.org/">japan</a>
+</li><li><a href="//geo.craigslist.org/iso/kw">kuwait</a>
+</li><li><a href="//geo.craigslist.org/iso/lb">lebanon</a>
+</li><li><a href="//geo.craigslist.org/iso/my">malaysia</a>
+</li><li><a href="//geo.craigslist.org/iso/pk">pakistan</a>
+</li><li><a href="http://manila.craigslist.org/">philippines</a>
+</li><li><a href="http://moscow.craigslist.org/">russia</a>
+</li><li><a href="http://singapore.craigslist.org/">singapore</a>
+</li><li><a href="//geo.craigslist.org/iso/kr">south korea</a>
+</li><li><a href="//geo.craigslist.org/iso/tw">taiwan</a>
+</li><li><a href="//geo.craigslist.org/iso/th">thailand</a>
+</li><li><a href="//geo.craigslist.org/iso/tr">turkey</a>
+</li><li><a href="//geo.craigslist.org/iso/ae">uae</a>
+</li><li><a href="//geo.craigslist.org/iso/vn">vietnam</a>
+</li><li><a href="//geo.craigslist.org/iso/ps">west bank</a>
+</li></ul></li>
+<li class="cont s">
+<h5>europe</h5>
+<ul class="acitem">
+<li><a href="//geo.craigslist.org/iso/at">austria</a>
+</li><li><a href="//geo.craigslist.org/iso/be">belgium</a>
+</li><li><a href="//geo.craigslist.org/iso/bg">bulgaria</a>
+</li><li><a href="//geo.craigslist.org/iso/hr">croatia</a>
+</li><li><a href="//geo.craigslist.org/iso/cz">czech republic</a>
+</li><li><a href="//geo.craigslist.org/iso/dk">denmark</a>
+</li><li><a href="//geo.craigslist.org/iso/fi">finland</a>
+</li><li><a href="http://paris.craigslist.org/">france</a>
+</li><li><a href="http://berlin.craigslist.org/">germany</a>
+</li><li><a href="//geo.craigslist.org/iso/gr">greece</a>
+</li><li><a href="//geo.craigslist.org/iso/hu">hungary</a>
+</li><li><a href="//geo.craigslist.org/iso/is">iceland</a>
+</li><li><a href="//geo.craigslist.org/iso/ie">ireland</a>
+</li><li><a href="http://rome.craigslist.org/">italy</a>
+</li><li><a href="//geo.craigslist.org/iso/lu">luxembourg</a>
+</li><li><a href="//geo.craigslist.org/iso/nl">netherlands</a>
+</li><li><a href="//geo.craigslist.org/iso/no">norway</a>
+</li><li><a href="//geo.craigslist.org/iso/pl">poland</a>
+</li><li><a href="//geo.craigslist.org/iso/pt">portugal</a>
+</li><li><a href="//geo.craigslist.org/iso/ro">romania</a>
+</li><li><a href="http://moscow.craigslist.org/">russia</a>
+</li><li><a href="http://madrid.craigslist.org/">spain</a>
+</li><li><a href="//geo.craigslist.org/iso/se">sweden</a>
+</li><li><a href="http://zurich.craigslist.org/">switzerland</a>
+</li><li><a href="//geo.craigslist.org/iso/tr">turkey</a>
+</li><li><a href="//geo.craigslist.org/iso/ua">ukraine</a>
+</li><li><a href="//geo.craigslist.org/iso/gb">united kingdom</a>
+</li></ul></li>
+<li class="cont s">
+<h5>middle east</h5>
+<ul class="acitem">
+<li><a href="//geo.craigslist.org/iso/eg">egypt</a>
+</li><li><a href="//geo.craigslist.org/iso/iq">iraq</a>
+</li><li><a href="http://telaviv.craigslist.org/">israel</a>
+</li><li><a href="//geo.craigslist.org/iso/kw">kuwait</a>
+</li><li><a href="//geo.craigslist.org/iso/lb">lebanon</a>
+</li><li><a href="//geo.craigslist.org/iso/tr">turkey</a>
+</li><li><a href="//geo.craigslist.org/iso/ae">uae</a>
+</li><li><a href="//geo.craigslist.org/iso/ps">west bank</a>
+</li></ul></li>
+<li class="cont s">
+<h5>oceania</h5>
+<ul class="acitem">
+<li><a href="http://sydney.craigslist.org/">australia</a>
+</li><li><a href="//geo.craigslist.org/iso/gu">guam</a>
+</li><li><a href="http://auckland.craigslist.org/">new zealand</a>
+</li><li><a href="http://manila.craigslist.org/">philippines</a>
+</li></ul></li>
+</ul>
+</li>
+</ul>

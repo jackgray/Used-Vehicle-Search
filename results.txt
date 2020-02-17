@@ -1,0 +1,61 @@
+	Price	City	Year	Mileage	Engine Size	Make	Model	Title	Locale	Link
+15	700	miami	2019	N/A	N/A	GX	Monster	GX Monster Electric Scooter	Miami	https://miami.craigslist.org/mdc/mcy/d/miami-gx-monster-electric-scooter/7064319974.html
+1	900	boston	2003	9000	620	ducati	monster	2003 ducati monster 620	Whitinsville	https://worcester.craigslist.org/mcy/d/linwood-2003-ducati-monster-620/7065978650.html
+58	1200	sfbay	2009	N/A	N/A	kawasaki	kx450f	2009 KX450F Monster Energy Edition	Grass Valley	https://goldcountry.craigslist.org/mcy/d/cedar-ridge-2009-kx450f-monster-energy/7076109563.html
+30	1200	sacramento	2009	N/A	N/A	kawasaki	kx450f	2009 KX450F Monster Energy Edition	Grass Valley	https://goldcountry.craigslist.org/mcy/d/cedar-ridge-2009-kx450f-monster-energy/7076109563.html
+12	1300	losangeles	1999	N/A	750	ducati	monster	Ducati Monster 750	Bermuda Dunes	https://palmsprings.craigslist.org/mcy/d/indio-ducati-monster-750/7076366624.html
+40	1300	sandiego	1999	N/A	750	ducati	monster	Ducati Monster 750	Bermuda Dunes	https://palmsprings.craigslist.org/mcy/d/indio-ducati-monster-750/7076366624.html
+25	1300	orangecounty	1999	N/A	750	ducati	monster	Ducati Monster 750	Bermuda Dunes	https://palmsprings.craigslist.org/mcy/d/indio-ducati-monster-750/7076366624.html
+3	1300	lasvegas	1999	N/A	750	ducati	monster	Ducati Monster 750	Bermuda Dunes	https://palmsprings.craigslist.org/mcy/d/indio-ducati-monster-750/7076366624.html
+2	1399	chicago	2016	2	125	Diaz	Ice Bear Monster	2017 IceBear Little Monster 125cc  Fun to Ride , Brand New	Northwest Suburbs	https://chicago.craigslist.org/nwc/mcd/d/arlington-heights-2017-icebear-little/7071589853.html
+59	1500	washingtondc	N/A	30000	900	Ducati	Monster	2000 Ducati Monster 900 for part	Reston, VA	https://washingtondc.craigslist.org/nva/mcy/d/reston-2000-ducati-monster-900-for-part/7069081166.html
+47	1500	sandiego	2001	15747	600	ducati	monster	2001 Ducati Monster 600 $1500 OBO	Hermosa Beach	https://losangeles.craigslist.org/wst/mcy/d/hermosa-beach-2001-ducati-monster-obo/7061949023.html
+23	1500	orangecounty	2001	15747	600	ducati	monster	2001 Ducati Monster 600 $1500 OBO	Hermosa Beach	https://losangeles.craigslist.org/wst/mcy/d/hermosa-beach-2001-ducati-monster-obo/7061949023.html
+10	1500	losangeles	2001	15747	600	ducati	monster	2001 Ducati Monster 600 $1500 OBO	Hermosa Beach	https://losangeles.craigslist.org/wst/mcy/d/hermosa-beach-2001-ducati-monster-obo/7061949023.html
+16	2200	miami	1998	N/A	N/A	Ducati	Monster 750	1998 Ducati Monster 750	Naples	https://fortmyers.craigslist.org/col/mcy/d/naples-1998-ducati-monster-750/7071673364.html
+14	2600	miami	2006	N/A	620	ducati	monster	2006 Ducati Monster	Pembroke Pines	https://miami.craigslist.org/brw/mcy/d/hollywood-2006-ducati-monster/7072099034.html
+39	2600	sandiego	N/A	N/A	750	Monster		Ducati 750 monster	Oceanside	https://sandiego.craigslist.org/csd/mcy/d/oceanside-ducati-750-monster/7064603495.html
+27	2600	orangecounty	N/A	N/A	750	Monster		Ducati 750 monster	Oceanside	https://sandiego.craigslist.org/csd/mcy/d/oceanside-ducati-750-monster/7064603495.html
+18	2700	orangecounty	2006	18650	620	Ducati	Monster 620	2006 Ducati Monster 620	Silverlake	https://losangeles.craigslist.org/lac/mcy/d/los-angeles-2006-ducati-monster-620/7071545906.html
+42	2700	sandiego	2006	18650	620	Ducati	Monster 620	2006 Ducati Monster 620	Silverlake	https://losangeles.craigslist.org/lac/mcy/d/los-angeles-2006-ducati-monster-620/7071545906.html
+5	2700	losangeles	2006	18650	620	Ducati	Monster 620	2006 Ducati Monster 620	Silverlake	https://losangeles.craigslist.org/lac/mcy/d/los-angeles-2006-ducati-monster-620/7071545906.html
+6	2800	losangeles	2003	N/A	900	ducati	monster	Ducati Monster M900 2003 Motorcycle	Los Angeles	https://losangeles.craigslist.org/lac/mcy/d/los-angeles-ducati-monster-m-motorcycle/7071133435.html
+19	2800	orangecounty	2003	N/A	900	ducati	monster	Ducati Monster M900 2003 Motorcycle	Los Angeles	https://losangeles.craigslist.org/lac/mcy/d/los-angeles-ducati-monster-m-motorcycle/7071133435.html
+43	2800	sandiego	2003	N/A	900	ducati	monster	Ducati Monster M900 2003 Motorcycle	Los Angeles	https://losangeles.craigslist.org/lac/mcy/d/los-angeles-ducati-monster-m-motorcycle/7071133435.html
+51	2899	sfbay	N/A	15000	N/A	Ducati	Monster M620	2002 Ducati Monster M620 Good Runner	corte madera	https://sfbay.craigslist.org/nby/mcy/d/greenbrae-2002-ducati-monster-m620-good/7074979487.html
+32	2899	sacramento	N/A	15000	N/A	Ducati	Monster M620	2002 Ducati Monster M620 Good Runner	corte madera	https://sfbay.craigslist.org/nby/mcy/d/greenbrae-2002-ducati-monster-m620-good/7074979487.html
+49	2900	seattle	2005	15000	800	ducati	monster	2005 Ducati Monster 800 S2R	Vancouver	https://portland.craigslist.org/clk/mcy/d/vancouver-2005-ducati-monster-800-s2r/7075670943.html
+29	2900	portland	2005	15000	800	ducati	monster	2005 Ducati Monster 800 S2R	Vancouver	https://portland.craigslist.org/clk/mcy/d/vancouver-2005-ducati-monster-800-s2r/7075670943.html
+28	2998	philadelphia	2007	40139	N/A	Ducati	Monster S2R 800	2007 Ducati Monster S2R 800 (D-B103599)	Cross Country Powersports - Metuchen NJ 08840	https://cnj.craigslist.org/mcd/d/edison-2007-ducati-monster-s2r-800/7065341600.html
+17	2998	newyork	2007	40139	N/A	Ducati	Monster S2R 800	2007 Ducati Monster S2R 800 (D-B103599)	Cross Country Powersports - Metuchen NJ 08840	https://cnj.craigslist.org/mcd/d/edison-2007-ducati-monster-s2r-800/7065341600.html
+0	2999	austin	2009	N/A	N/A	kawasaki	kx250f	"2009 KX250F ""Monster Edition"" Dirtbike and lots of Gear!"	North Austin	https://austin.craigslist.org/mcy/d/austin-2009-kx250f-monster-edition/7073703484.html
+56	2999	sfbay	N/A	10000	N/A	Ducati		2005 Ducati Monster M620 620 Race Tuned	san rafael	https://sfbay.craigslist.org/nby/mcy/d/san-rafael-2005-ducati-monster-m-race/7064307640.html
+37	2999	sacramento	N/A	10000	N/A	Ducati		2005 Ducati Monster M620 620 Race Tuned	san rafael	https://sfbay.craigslist.org/nby/mcy/d/san-rafael-2005-ducati-monster-m-race/7064307640.html
+55	3000	sfbay	2005	25260	803	Ducati	monster	2005 Ducati monster S2R 800	brentwood / oakley	https://sfbay.craigslist.org/eby/mcy/d/brentwood-2005-ducati-monster-s2r-800/7066862715.html
+54	3000	sfbay	2001	24000	916	ducati	monster s4	2001 Ducati Monster S4	daly city	https://sfbay.craigslist.org/pen/mcy/d/daly-city-2001-ducati-monster-s4/7069164615.html
+53	3000	sfbay	2002	15640	618	Ducati	Monster 620ie	2002 Ducati Monster 620ie	Paso Robles	https://sfbay.craigslist.org/sfc/mcy/d/paso-robles-2002-ducati-monster-620ie/7070489780.html
+4	3000	lasvegas	2009	30340	696	ducati	monster 696	2009 Ducati Monster 696	Yucca Valley	https://palmsprings.craigslist.org/mcy/d/yucca-valley-2009-ducati-monster-696/7063508944.html
+7	3000	losangeles	2002	15640	618	Ducati	Monster 620ie	2002 Ducati Monster 620ie	Paso Robles	https://losangeles.craigslist.org/lac/mcy/d/paso-robles-2002-ducati-monster-620ie/7070493311.html
+48	3000	sandiego	2002	N/A	N/A	ducati	monster 620 dark	Ducati Monster	seal beach	https://losangeles.craigslist.org/lgb/mcy/d/seal-beach-ducati-monster/7061862798.html
+44	3000	sandiego	2002	15640	618	Ducati	Monster 620ie	2002 Ducati Monster 620ie	Paso Robles	https://losangeles.craigslist.org/lac/mcy/d/paso-robles-2002-ducati-monster-620ie/7070493311.html
+26	3000	orangecounty	2009	30340	696	ducati	monster 696	2009 Ducati Monster 696	Yucca Valley	https://palmsprings.craigslist.org/mcy/d/yucca-valley-2009-ducati-monster-696/7063508944.html
+11	3000	losangeles	2002	N/A	N/A	ducati	monster 620 dark	Ducati Monster	seal beach	https://losangeles.craigslist.org/lgb/mcy/d/seal-beach-ducati-monster/7061862798.html
+24	3000	orangecounty	2002	N/A	N/A	ducati	monster 620 dark	Ducati Monster	seal beach	https://losangeles.craigslist.org/lgb/mcy/d/seal-beach-ducati-monster/7061862798.html
+13	3000	losangeles	2009	30340	696	ducati	monster 696	2009 Ducati Monster 696	Yucca Valley	https://palmsprings.craigslist.org/mcy/d/yucca-valley-2009-ducati-monster-696/7063508944.html
+36	3000	sacramento	2005	25260	803	Ducati	monster	2005 Ducati monster S2R 800	brentwood / oakley	https://sfbay.craigslist.org/eby/mcy/d/brentwood-2005-ducati-monster-s2r-800/7066862715.html
+35	3000	sacramento	2001	24000	916	ducati	monster s4	2001 Ducati Monster S4	daly city	https://sfbay.craigslist.org/pen/mcy/d/daly-city-2001-ducati-monster-s4/7069164615.html
+34	3000	sacramento	2002	15640	618	Ducati	Monster 620ie	2002 Ducati Monster 620ie	Paso Robles	https://sfbay.craigslist.org/sfc/mcy/d/paso-robles-2002-ducati-monster-620ie/7070489780.html
+41	3000	sandiego	2009	30340	696	ducati	monster 696	2009 Ducati Monster 696	Yucca Valley	https://palmsprings.craigslist.org/mcy/d/yucca-valley-2009-ducati-monster-696/7063508944.html
+20	3000	orangecounty	2002	15640	618	Ducati	Monster 620ie	2002 Ducati Monster 620ie	Paso Robles	https://losangeles.craigslist.org/lac/mcy/d/paso-robles-2002-ducati-monster-620ie/7070493311.html
+33	3150	sacramento	2005	13800	620	ducati	monster	2005 Ducati Monster 620	noe valley	https://sfbay.craigslist.org/sfc/mcy/d/san-francisco-2005-ducati-monster-620/7070527313.html
+52	3150	sfbay	2005	13800	620	ducati	monster	2005 Ducati Monster 620	noe valley	https://sfbay.craigslist.org/sfc/mcy/d/san-francisco-2005-ducati-monster-620/7070527313.html
+57	3200	sfbay	2006	43000	N/A	ducati	monster 821	2006 ducati monster	fairfield / vacaville	https://sfbay.craigslist.org/eby/mcy/d/rio-vista-2006-ducati-monster/7059281871.html
+22	3200	orangecounty	2001	25000	900	ducati	monster 900	2001 Ducati Monster 900 Chromo	Santa Monica	https://losangeles.craigslist.org/wst/mcy/d/santa-monica-2001-ducati-monster-900/7065485763.html
+21	3200	orangecounty	2009	11000	N/A	ducati	monster	2009ducati monster 696	burbank	https://losangeles.craigslist.org/sfv/mcy/d/burbank-2009ducati-monster-696/7068856659.html
+31	3200	sacramento	2006	43000	N/A	ducati	monster 821	2006 ducati monster	fairfield / vacaville	https://sfbay.craigslist.org/eby/mcy/d/rio-vista-2006-ducati-monster/7076708148.html
+50	3200	sfbay	2006	43000	N/A	ducati	monster 821	2006 ducati monster	fairfield / vacaville	https://sfbay.craigslist.org/eby/mcy/d/rio-vista-2006-ducati-monster/7076708148.html
+46	3200	sandiego	2001	25000	900	ducati	monster 900	2001 Ducati Monster 900 Chromo	Santa Monica	https://losangeles.craigslist.org/wst/mcy/d/santa-monica-2001-ducati-monster-900/7065485763.html
+45	3200	sandiego	2009	11000	N/A	ducati	monster	2009ducati monster 696	burbank	https://losangeles.craigslist.org/sfv/mcy/d/burbank-2009ducati-monster-696/7068856659.html
+38	3200	sacramento	2006	43000	N/A	ducati	monster 821	2006 ducati monster	fairfield / vacaville	https://sfbay.craigslist.org/eby/mcy/d/rio-vista-2006-ducati-monster/7059281871.html
+8	3200	losangeles	2009	11000	N/A	ducati	monster	2009ducati monster 696	burbank	https://losangeles.craigslist.org/sfv/mcy/d/burbank-2009ducati-monster-696/7068856659.html
+9	3200	losangeles	2001	25000	900	ducati	monster 900	2001 Ducati Monster 900 Chromo	Santa Monica	https://losangeles.craigslist.org/wst/mcy/d/santa-monica-2001-ducati-monster-900/7065485763.html
