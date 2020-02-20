@@ -1,6 +1,8 @@
 ##!#/usr/bin/env python3
 
 import os
+import sys
+import argparse
 from lxml import html
 from bs4 import BeautifulSoup
 from bs4 import SoupStrainer
@@ -14,10 +16,13 @@ import gspread
 from df2gspread import df2gspread as d2g
 from oauth2client.service_account import ServiceAccountCredentials
 
+# Set up argument parser
+parser = argparse.ArgumentParser(description='Search motorcycles all over the US')
+parser.add_argument('search',
+                    help='term you want to search')
 
-'https://washingtondc.craigslist.org/search/mca?s=query=speed%20triple&srchType=T&hasPic=1&min_price=0&max_price=5000&min_engine_displacement_cc=&max_engine_displacement_cc='
-
-'https://washingtondc.craigslist.org/search/mca?query=speed+triple&srchType=T&hasPic=1&min_price=0&max_price=5000'
+parser.add_argument('max_price')
+args = parser.parse_args()
 
 # Set up Google Sheets interface
 scope = ['https://spreadsheets.google.com/feeds',
@@ -39,12 +44,11 @@ year = []
 make = []
 cities = []
 locations = []
-pd.set_option("display.max_colwidth", 10000)
 
-# search_region = 'newyork'
+# Set search parameters
 search_nation = 'yes'
-query = 'monster'
-max_price = '3200'
+query = args.search
+max_price = args.max_price
 min_price = '500'
 search_type = 'T'   # T = search titles only
 has_pic = '1'       # 1 = must include picture
@@ -82,26 +86,21 @@ if search_nation == 'yes':
     # Perform search on each city in the nation
     for city_url in city_urls:
         print('\n\n NEW CITY \n\n')
-        while_count = 0
         page = 0
         while True:
 
             # Collect individual links from query results
-
             url = city_url + 'search/mca?s=' + str(page) + '&query=' +  query + '&srchType=' + search_type + '&hasPic=' + has_pic + '&min_price=' + min_price + '&max_price=' + max_price
 
-            print('\n results page: \n', url, '\n\n')
-
-            while_count = while_count + 1
-
+            # Grab results page
             with requests.Session() as session:
                 res = session.get(url)
                 html = BeautifulSoup(res.content, 'lxml')
-                with open('search_html.txt', mode='w') as tmp:
-                    tmp.write('\n'.join(map(str,html)))
-                link_html = html.find_all('a', {'class': 'result-title hdrlnk'})
 
-            # Determine if next page exists
+            # Grab all a-tags (listing links)
+            link_html = html.find_all('a', {'class': 'result-title hdrlnk'})
+
+            # Next page of results exists if there is an a-tag with class "button next"
             next_html = html.find_all('a', {'class': 'button next'})
 
             # Access page of individual results
@@ -138,7 +137,6 @@ if search_nation == 'yes':
 
                 # Collect Title
                 title_html = spans.find_all('span', {'id': 'titletextonly'})
-
                 for i in title_html:
                     title = i.text
                     title = ''.join(title) # list by default / convert to string
@@ -150,7 +148,6 @@ if search_nation == 'yes':
                     locations.append(spans.find_all('small')[0].text.lstrip(' (').rstrip(')'))
                 except:
                     locations.append('N/A')
-
                 print('locale: ', locations[-1])
 
                 # Find vehicle name info
@@ -183,7 +180,6 @@ if search_nation == 'yes':
                             year.append(name[0])
                         except:
                             year.append('N/A')
-
                 else:
                     model.append('N/A')
                     year.append('N/A')
@@ -196,6 +192,7 @@ if search_nation == 'yes':
 
                 # Collect miles
                 odom_html = spans.find_all(text=re.compile('odometer:'))
+                # First determine if poster specified mileage
                 if odom_html:
                     for i in odom_html:
                         try:
@@ -208,6 +205,7 @@ if search_nation == 'yes':
 
                 # Collect engine size
                 cc_html = spans.find_all(text=re.compile('engine displacement \(CC\)'))
+                # First determine if poster specified engine size
                 if cc_html:
                     for i in cc_html:
                         try:
@@ -318,12 +316,13 @@ df = pd.DataFrame({'Price': prices, 'City': cities, 'Year': year, 'Mileage': mil
 pd.set_option("display.max_colwidth", 10000)
 
 
-unwanted = ['parts', 'grom', 'tank', 'motor', 'scooter', 'vespa', 'engine', 'shadow', 'tow', 'tag', 'goldwing', 'dirt', 'ruckus', 'chopper', 'virago', 'wanted', 'moped', 'scooter', 'xr', 'manual', 'cbr', 'crf', 'hondamatic', 'harley', '125', 'star', 'rebel', 'vulcan', 'cr', 'wr', 'car', 'finance', 'hyosung', 'approved', 'zero', 'financing', 'atv', 'sabre', '50', 'single-cylinder', 'can-am', 'ryker', 'spyder', 'camper', 'lineup']
+ignore = ['parts', 'grom', 'tank', 'motor', 'scooter', 'vespa', 'engine', 'shadow', 'tow', 'tag', 'goldwing', 'dirt', 'ruckus', 'chopper', 'virago', 'wanted', 'moped', 'scooter', 'xr', 'manual', 'cbr', 'crf', 'hondamatic', 'harley', '125', 'star', 'rebel', 'vulcan', 'cr', 'wr', 'car', 'finance', 'hyosung', 'approved', 'zero', 'financing', 'atv', 'sabre', '50', 'single-cylinder', 'can-am', 'ryker', 'spyder', 'camper', 'lineup']
 # df = df[df.Title.str.contains('honda cb|yamaha sr')].sort_values('Price')
 
 # print('\nFiltering unwanted keywords...\n')
-# for i in unwanted:
-#     df = df[~df.Title.str.contains(i)].sort_values('Price').drop_duplicates()
+if args.ignore:
+    for i in ignore:
+        df = df[~df.Title.str.contains(i)].sort_values('Price').drop_duplicates()
 
 # print(newdf)
 # Max Price
