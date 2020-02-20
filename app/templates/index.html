@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block body %}
+<div >
+  <h1>CL Vehicle Shopper</h1>
+  <p >Search the Entire Country or Selected Regions</p>
+</div>
+<div>
+    <form action="/find-motorcycles.py">
+        <label for="search_regions">Areas to search:</label>
+        <input type="text" id="search_regions" name="search_regions"><br><br>
+        <label for="query">Search:</label>
+        <input type="text" id="query" name="query"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+</div>
+{% endblock %}

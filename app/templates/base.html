@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    Custom styles for this template -->
+    <!-- <link href="https://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet"> -->
+  </head>
+  <body>
+    <div>
+      <div >
+        <nav>
+          <ul >
+            <li ><a href="/">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+      {% block body %}
+      {% endblock %}
+      <footer >
+        <p>&copy; 2020 git:@jackgray</p>
+      </footer>
+    </div> <!-- /container -->
+  </body>
+</html>

@@ -4,7 +4,7 @@ html
 <meta content='washington, DC motorcycles/scooters "monster" - craigslist' name="description"/>
 <meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
 <link href="https://washingtondc.craigslist.org/search/mca" rel="canonical"/>
-<link href="https://washingtondc.craigslist.org/search/mca?format=rss&amp;hasPic=1&amp;max_price=3200&amp;min_price=500&amp;query=monster&amp;srchType=T" rel="alternate" title='RSS feed for craigslist | washington, DC motorcycles/scooters "monster" - craigslist' type="application/rss+xml"/>
+<link href="https://washingtondc.craigslist.org/search/mca?format=rss&amp;hasPic=1&amp;max_price=6000&amp;min_price=500&amp;query=monster&amp;srchType=T" rel="alternate" title='RSS feed for craigslist | washington, DC motorcycles/scooters "monster" - craigslist' type="application/rss+xml"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="//www.craigslist.org/styles/cl.css?v=784f71fcd82733e2b32e8d3284beaf58" media="all" rel="stylesheet" type="text/css"/>
 <link href="//www.craigslist.org/styles/search.css?v=bc035cbbc3978b0ec9df93944cdf349b" media="all" rel="stylesheet" type="text/css"/>
@@ -94,7 +94,7 @@ var zoomToPosting = null;
 <a class="header-logo" href="/" name="logoLink">CL</a>
 <nav class="breadcrumbs-container">
 <form action="/search/mca" class="breadcrumbs-form" data-action="/search/###/mca" id="breadcrumbform" method="get">
-<input name="max_price" type="hidden" value="3200"/>
+<input name="max_price" type="hidden" value="6000"/>
 <input name="query" type="hidden" value="monster"/>
 <input name="srchType" type="hidden" value="T"/>
 <input name="hasPic" type="hidden" value="1"/>
@@ -251,7 +251,7 @@ var zoomToPosting = null;
 <li class="user discards">
 <form action="/favorites" class="unfavform js-only" method="POST">
 <div class="to-banish-page">
-<input class="lastLink" name="lastLink" type="hidden" value="//washingtondc.craigslist.org/search/mca?hasPic=1&amp;max_price=3200&amp;min_price=500&amp;query=monster&amp;srchType=T"/>
+<input class="lastLink" name="lastLink" type="hidden" value="//washingtondc.craigslist.org/search/mca?hasPic=1&amp;max_price=6000&amp;min_price=500&amp;query=monster&amp;srchType=T"/>
 <input class="lastTitle" name="lastTitle" type="hidden" value=""/>
 <input class="unfaves" name="fl" type="hidden"/>
 <input name="uf" type="hidden" value="1"/>
@@ -289,7 +289,7 @@ motorcycles/scooters
 <span class="screen-reader-text">press to search craigslist</span>
 </button>
 <div class="savealert">
-<a class="saveme" data-action="save" href="https://accounts.craigslist.org/login?rt=L&amp;rp=%2Fsavesearch%2Fsave%3FURL%3Dhttps%253A%252F%252Fwashingtondc%252Ecraigslist%252Eorg%252Fsearch%252Fmca%253FhasPic%253D1%2526max%255Fprice%253D3200%2526min%255Fprice%253D500%2526query%253Dmonster%2526srchType%253DT" title="save this search">save search</a>
+<a class="saveme" data-action="save" href="https://accounts.craigslist.org/login?rt=L&amp;rp=%2Fsavesearch%2Fsave%3FURL%3Dhttps%253A%252F%252Fwashingtondc%252Ecraigslist%252Eorg%252Fsearch%252Fmca%253FhasPic%253D1%2526max%255Fprice%253D6000%2526min%255Fprice%253D500%2526query%253Dmonster%2526srchType%253DT" title="save this search">save search</a>
 </div>
 </div>
 <div class="search-options-container">
@@ -307,11 +307,11 @@ motorcycles/scooters
 <input name="userid" type="hidden" value=""/>
 <ul class="searchgroup buttongroup purveyor">
 <li class="button sel">
-<a data-val="all" href="/search/mca?hasPic=1&amp;max_price=3200&amp;min_price=500&amp;query=monster&amp;srchType=T">all</a>
+<a data-val="all" href="/search/mca?hasPic=1&amp;max_price=6000&amp;min_price=500&amp;query=monster&amp;srchType=T">all</a>
 </li><li class="button">
-<a data-val="owner" href="/search/mcy?hasPic=1&amp;max_price=3200&amp;min_price=500&amp;query=monster&amp;srchType=T"> owner</a>
+<a data-val="owner" href="/search/mcy?hasPic=1&amp;max_price=6000&amp;min_price=500&amp;query=monster&amp;srchType=T"> owner</a>
 </li><li class="button">
-<a data-val="dealer" href="/search/mcd?hasPic=1&amp;max_price=3200&amp;min_price=500&amp;query=monster&amp;srchType=T">dealer</a>
+<a data-val="dealer" href="/search/mcd?hasPic=1&amp;max_price=6000&amp;min_price=500&amp;query=monster&amp;srchType=T">dealer</a>
 </li>
 </ul>
 <div class="searchgroup">
@@ -832,7 +832,7 @@ motorcycles/scooters
 <div class="searchgroup minmax price">
 <span class="searchfieldlabel">price</span>
 <input class="flatinput min" name="min_price" placeholder="min" title="whole number, no letters or symbols" type="tel" value="500"/>
-<input class="flatinput max" name="max_price" placeholder="max" title="whole number, no letters or symbols" type="tel" value="3200"/>
+<input class="flatinput max" name="max_price" placeholder="max" title="whole number, no letters or symbols" type="tel" value="6000"/>
 </div>
 <div class="searchgroup"><span class="searchfieldlabel">make and model</span>
 <input class="flatinput auto_make_model" data-autocomplete="makemodel" name="auto_make_model" placeholder="make / model" type="text" value=""/>
@@ -1382,16 +1382,16 @@ motorcycles/scooters
 <div aria-expanded="false" aria-label="sort options" class="dropdown dropdown-sort dropdown-arrows" data-default-sort="rel" role="toolbar">
 <ul class="dropdown-list">
 <li aria-selected="false" class="dropdown-item mode">
-<a data-selection="date" href="/search/mca?sort=date&amp;hasPic=1&amp;max_price=3200&amp;min_price=500&amp;query=monster&amp;srchType=T" title="show newest matches first">newest <span class="toggle-arrow"></span></a>
+<a data-selection="date" href="/search/mca?sort=date&amp;hasPic=1&amp;max_price=6000&amp;min_price=500&amp;query=monster&amp;srchType=T" title="show newest matches first">newest <span class="toggle-arrow"></span></a>
 </li>
 <li aria-selected="true" class="dropdown-item mode sel">
-<a data-selection="rel" href="/search/mca?sort=rel&amp;hasPic=1&amp;max_price=3200&amp;min_price=500&amp;query=monster&amp;srchType=T" title="show most relevant matches first">relevant <span class="toggle-arrow"></span></a>
+<a data-selection="rel" href="/search/mca?sort=rel&amp;hasPic=1&amp;max_price=6000&amp;min_price=500&amp;query=monster&amp;srchType=T" title="show most relevant matches first">relevant <span class="toggle-arrow"></span></a>
 </li>
 <li aria-selected="false" class="dropdown-item mode">
-<a data-selection="priceasc" href="/search/mca?sort=priceasc&amp;hasPic=1&amp;max_price=3200&amp;min_price=500&amp;query=monster&amp;srchType=T" title="sort by price, lowest to highest">price ↑ <span class="toggle-arrow"></span></a>
+<a data-selection="priceasc" href="/search/mca?sort=priceasc&amp;hasPic=1&amp;max_price=6000&amp;min_price=500&amp;query=monster&amp;srchType=T" title="sort by price, lowest to highest">price ↑ <span class="toggle-arrow"></span></a>
 </li>
 <li aria-selected="false" class="dropdown-item mode">
-<a data-selection="pricedsc" href="/search/mca?sort=pricedsc&amp;hasPic=1&amp;max_price=3200&amp;min_price=500&amp;query=monster&amp;srchType=T" title="sort by price, highest to lowest">price ↓ <span class="toggle-arrow"></span></a>
+<a data-selection="pricedsc" href="/search/mca?sort=pricedsc&amp;hasPic=1&amp;max_price=6000&amp;min_price=500&amp;query=monster&amp;srchType=T" title="sort by price, highest to lowest">price ↓ <span class="toggle-arrow"></span></a>
 </li>
 </ul>
 </div>
@@ -1403,9 +1403,9 @@ motorcycles/scooters
         </span>
 </span>
 <span class="buttons">
-<a class="button first" href="/search/mca?hasPic=1&amp;max_price=3200&amp;min_price=500&amp;query=monster&amp;srchType=T" title="first page">&lt;&lt;</a>
+<a class="button first" href="/search/mca?hasPic=1&amp;max_price=6000&amp;min_price=500&amp;query=monster&amp;srchType=T" title="first page">&lt;&lt;</a>
 <span class="button first" title="first page">&lt;&lt;</span>
-<a class="button prev" href="/search/mca?hasPic=1&amp;max_price=3200&amp;min_price=500&amp;query=monster&amp;srchType=T" title="previous page">&lt; prev</a>
+<a class="button prev" href="/search/mca?hasPic=1&amp;max_price=6000&amp;min_price=500&amp;query=monster&amp;srchType=T" title="previous page">&lt; prev</a>
 <span class="button prev" title="previous page">&lt; prev</span>
 <span class="button pagenum">
 <span class="range">
@@ -1431,7 +1431,7 @@ motorcycles/scooters
 <div class="alert alert-sm alert-info searchHints">
 <span class="prompt">ALSO TRY:</span>
 <ul>
-<li><a href="/search/mca?auto_make_model=monster&amp;hasPic=1&amp;hints=makemodel&amp;max_price=3200&amp;min_price=500&amp;srchType=T"><strong>make and model: </strong>monster, <strong>has pic</strong>, <strong>max price: </strong>3200, <strong>min price: </strong>500, title only</a></li>
+<li><a href="/search/mca?auto_make_model=monster&amp;hasPic=1&amp;hints=makemodel&amp;max_price=6000&amp;min_price=500&amp;srchType=T"><strong>make and model: </strong>monster, <strong>has pic</strong>, <strong>max price: </strong>6000, <strong>min price: </strong>500, title only</a></li>
 </ul>
 </div>
 <div class="open-map-view-button">
@@ -1491,9 +1491,9 @@ motorcycles/scooters
         </span>
 </span>
 <span class="buttons">
-<a class="button first" href="/search/mca?hasPic=1&amp;max_price=3200&amp;min_price=500&amp;query=monster&amp;srchType=T" title="first page">&lt;&lt;</a>
+<a class="button first" href="/search/mca?hasPic=1&amp;max_price=6000&amp;min_price=500&amp;query=monster&amp;srchType=T" title="first page">&lt;&lt;</a>
 <span class="button first" title="first page">&lt;&lt;</span>
-<a class="button prev" href="/search/mca?hasPic=1&amp;max_price=3200&amp;min_price=500&amp;query=monster&amp;srchType=T" title="previous page">&lt; prev</a>
+<a class="button prev" href="/search/mca?hasPic=1&amp;max_price=6000&amp;min_price=500&amp;query=monster&amp;srchType=T" title="previous page">&lt; prev</a>
 <span class="button prev" title="previous page">&lt; prev</span>
 <span class="button pagenum">
 <span class="range">
@@ -1544,7 +1544,7 @@ motorcycles/scooters
 </div>
 <footer>
 <span class="rss">
-<a class="l" href="https://washingtondc.craigslist.org/search/mca?format=rss&amp;hasPic=1&amp;max_price=3200&amp;min_price=500&amp;query=monster&amp;srchType=T">RSS</a>
+<a class="l" href="https://washingtondc.craigslist.org/search/mca?format=rss&amp;hasPic=1&amp;max_price=6000&amp;min_price=500&amp;query=monster&amp;srchType=T">RSS</a>
 <a href="https://www.craigslist.org/about/rss">(?)</a><br/>
 </span>
 <ul class="clfooter">
