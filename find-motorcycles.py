@@ -3,6 +3,7 @@
 import os
 import sys
 import argparse
+import pygtrie
 from lxml import html
 from bs4 import BeautifulSoup
 from bs4 import SoupStrainer
@@ -17,11 +18,29 @@ from df2gspread import df2gspread as d2g
 from oauth2client.service_account import ServiceAccountCredentials
 
 # Set up argument parser
-parser = argparse.ArgumentParser(description='Search motorcycles all over the US')
+parser = argparse.ArgumentParser(description='Search motorcycles all over the US', prefix_chars='-')
 parser.add_argument('search',
                     help='term you want to search')
 parser.add_argument('max_price')
+parser.add_argument('-i', '--ignore',  help='ignore results with these words in them (separated by comma (,) no spaces)')
 args = parser.parse_args()
+
+# # Set up region search trie for matching craigslist regions for url prefix
+# t = pygtrie.StringTree()
+# t['nyc/newyork'] = 'newyork'
+# t['newjersey/jersey/nj'] = 'newjersey'
+
+# pygtrie is not working
+# Define search region dictionary for CLI user input
+regions = {}
+regions[('nyc', 'new york', 'newyork')] = 'newyork'
+regions[('long island', 'li', 'longisland')] = 'longisland'
+regions[('hudsonvalley', 'hudson valley')] = 'hudsonvalley'
+regions[('jersey', 'north jersey', 'northjersey', 'nj', 'new jersey', 'newjersey')] = 'newjersey'
+regions[('san fransisco', 'sf', 'sanfransisco', 'sfbay')] = 'sfbay'
+regions[('birmingham', 'bham')] = 'bham'
+regions[('atl', 'atlanta')] = 'atlanta'
+regions[('auburn', 'aub', 'au')] = 'auburn'
 
 # Set up Google Sheets interface
 scope = ['https://spreadsheets.google.com/feeds',
@@ -42,10 +61,12 @@ model = []
 year = []
 make = []
 cities = []
-locations = []
+locales = []
+city_names = ['atlanta', 'austin', 'boston', 'chicago', 'dallas', 'denver', 'detroit', 'houston', 'las vegas', 'los angeles', 'miami', 'minneapolis', 'new york', 'orange co', 'philadelphia', 'phoenix', 'portland', 'raleigh', 'sacramento', 'san diego', 'seattle', 'sf bayarea', 'wash dc']
+city_codes = ['atlanta', 'austin', 'boston', 'chicago', 'dallas', 'denver', 'detroit', 'houston', 'lasvegas', 'losangeles', 'miami', 'minneapolis' ,'newyork', 'orangecounty', 'philadelphia', 'phoenix', 'portland', 'raleigh', 'sacramento', 'sandiego', 'seattle', 'sfbay', 'washingtondc']
 
 # Set search parameters
-search_nation = 'yes'
+region_input = tuple(input('Enter cities you want craigslist to search (separated by space (", "): ').lower().split(' '))
 query = args.search
 max_price = args.max_price
 min_price = '500'
@@ -62,32 +83,24 @@ page = 0
 
 city_urls = []
 urls = []
-search_regions = ['newyork', 'newjersey']
-craigslist = 'http://craigslist.com'
+craigslist = 'http://craigslist.org'
 state_pattern = re.compile(r'(?<=">")(.*)(?=</)')   # finds state inside url
+
+ignore = ['parts', 'grom', 'tank', 'motor', 'scooter', 'vespa', 'engine', 'shadow', 'tow', 'tag', 'goldwing', 'dirt', 'ruckus', 'chopper', 'virago', 'wanted', 'moped', 'scooter', 'xr', 'manual', 'cbr', 'crf', 'hondamatic', 'harley', '125', 'star', 'rebel', 'vulcan', 'cr', 'wr', 'car', 'finance', 'hyosung', 'approved', 'zero', 'financing', 'atv', 'sabre', '50', 'single-cylinder', 'can-am', 'ryker', 'spyder', 'camper', 'lineup']
 
 #TODO: refactor. refactor. refactor.
 
-if search_nation == 'yes':
-    # Get list of regions for searching entire US
-    with requests.Session() as session:
-        res = session.get(craigslist)
-        html = BeautifulSoup(res.content, 'lxml')
-        regions_html = html.find_all('ul', {'class': 'menu collapsible'})
-        with open('regions.txt', 'w') as regions:
-            regions.write('\n'.join(map(str, regions_html)))
-        for i in regions_html:
-            cities_html = i.find_all('ul', {'class': 'acitem'})[1].find_all('a')
-        for i in cities_html:
-            city_urls.append(i.get('href'))
-        city_urls.pop(-1)   # last url scraped is bunk -- remove it
+if len(region_input) <= 1:
+    search_regions = city_codes
+
+    print('\nsearching entire U.S.\n')
 
     # Perform search on each city in the nation
-    for city_url in city_urls:
+    for region in search_regions:
         page = 0
         while True:
             # Collect individual links from query results
-            url = city_url + 'search/mca?s=' + str(page) + '&query=' +  query + '&srchType=' + search_type + '&hasPic=' + has_pic + '&min_price=' + min_price + '&max_price=' + max_price
+            url = 'http://' + region +  '.craigslist.org/search/mca?s=' + str(page) + '&query=' +  query + '&srchType=' + search_type + '&hasPic=' + has_pic + '&min_price=' + min_price + '&max_price=' + max_price
 
             # Grab results page
             with requests.Session() as session:
@@ -100,14 +113,14 @@ if search_nation == 'yes':
             # Next page of results exists if there is an a-tag with class "button next"
             next_html = html.find_all('a', {'class': 'button next'})
 
-            # Access page of individual results
+            # Access page of each listing
             for url in link_html:
                 link = url.get('href')  # grabs url inside of a-tag
                 links.append(link)
 
                 # Save city from url prefix
-                city = city_url.replace('http://', '').replace('.craigslist.org/', '')
-                cities.append(city)
+                # city = .replace('http://', '').replace('.craigslist.org/', '')
+                cities.append(region)
 
                 # Grab html of individual results
                 with requests.Session() as session:
@@ -143,10 +156,10 @@ if search_nation == 'yes':
 
                 # Collect location
                 try:
-                    locations.append(spans.find_all('small')[0].text.lstrip(' (').rstrip(')'))
+                    locales.append(spans.find_all('small')[0].text.lstrip(' (').rstrip(')'))
                 except:
-                    locations.append('N/A')
-                # print('locale: ', locations[-1])
+                    locales.append('N/A')
+                # print('locale: ', locales[-1])
 
                 # Find vehicle name info
                 name_html = p_tags.find_all('p', {'class': 'attrgroup'})
@@ -224,10 +237,14 @@ if search_nation == 'yes':
                 break
 
 # Only search pre-selected regions
-if search_nation == 'no':
-
+else:
+    search_regions = []
+    for i in regions:
+        if any(x in i for x in region_input):
+            search_regions.append(regions[i])
+            print('\n\nthis shit right here:'+regions[i])
     # Perform search on each city listed in argument
-    for region in search regions:
+    for region in search_regions:
         # reset page number
         page = 0
         # keep looping as long as a next page is detected
@@ -252,8 +269,8 @@ if search_nation == 'no':
                 links.append(link)
 
                 # Save city from url prefix
-                city = city_url.replace('http://', '').replace('.craigslist.org/', '')
-                cities.append(city)
+                # city = city_url.replace('http://', '').replace('.craigslist.org/', '')
+                cities.append(region)
 
                 # Grab html of individual results
                 with requests.Session() as session:
@@ -289,16 +306,17 @@ if search_nation == 'no':
 
                 # Collect location
                 try:
-                    locations.append(spans.find_all('small')[0].text.lstrip(' (').rstrip(')'))
+                    locales.append(spans.find_all('small')[0].text.lstrip(' (').rstrip(')'))
                 except:
-                    locations.append('N/A')
-                # print('locale: ', locations[-1])
+                    locales.append('N/A')
+                # print('locale: ', locales[-1])
 
                 # Find vehicle name info
                 name_html = p_tags.find_all('p', {'class': 'attrgroup'})
                 if name_html:
                     name = name_html[0].find_next('b').text.lstrip(' ')
                     name = name.split(' ')  # parse name into components
+
                     # Vehicle name section is unformated--could include any combination of year/make/model/engine size
                     # Determine if year is included in vehicle name
                     if len(name[0]) > 4:    # year is 4 chars; if first item is more than that then assume the date is not given and that the first item is
@@ -413,21 +431,22 @@ print('miles: ', len(miles))
 print('ccs: ', len(ccs))
 print('model: ', len(model))
 print('make: ', len(make))
-print('locale: ', len(locations))
+print('locale: ', len(locales))
 print('title: ', len(titles))
 
 # Add results to dataframe
-df = pd.DataFrame({'Price': prices, 'City': cities, 'Year': year, 'Mileage': miles, 'Engine Size': ccs, 'Make': make, 'Model': model, 'Title': titles, 'Locale': locations, 'Link': links})
+df = pd.DataFrame({'Price': prices, 'City': cities, 'Year': year, 'Mileage': miles, 'Engine Size': ccs, 'Make': make, 'Model': model, 'Title': titles, 'Locale': locales, 'Link': links})
 pd.set_option("display.max_colwidth", 10000)
 
-
-ignore = ['parts', 'grom', 'tank', 'motor', 'scooter', 'vespa', 'engine', 'shadow', 'tow', 'tag', 'goldwing', 'dirt', 'ruckus', 'chopper', 'virago', 'wanted', 'moped', 'scooter', 'xr', 'manual', 'cbr', 'crf', 'hondamatic', 'harley', '125', 'star', 'rebel', 'vulcan', 'cr', 'wr', 'car', 'finance', 'hyosung', 'approved', 'zero', 'financing', 'atv', 'sabre', '50', 'single-cylinder', 'can-am', 'ryker', 'spyder', 'camper', 'lineup']
 # df = df[df.Title.str.contains('honda cb|yamaha sr')].sort_values('Price')
 
 # print('\nFiltering unwanted keywords...\n')
+
 if args.ignore:
-    for i in ignore:
-        df = df[~df.Title.str.contains(i)].sort_values('Price').drop_duplicates()
+    ignore = args.ignore
+
+for i in ignore:
+    df = df[~df.Title.astype(str).str.contains(i)].sort_values('Price').drop_duplicates()
 
 # print(newdf)
 # Max Price

@@ -1,0 +1,1 @@
+'atlanta'/, 'austin'/, 'boston'/, 'chicago'/, 'dallas'/, 'denver'/, 'detroit'/, 'houston'/, 'lasvegas'/, 'losangeles'/, 'miami'/, 'minneapolis'/, 'newyork'/, 'orangecounty'/, 'philadelphia'/, 'phoenix'/, 'portland'/, 'raleigh'/, 'sacramento'/, 'sandiego'/, 'seattle'/, 'sfbay'/, 'washingtondc'/

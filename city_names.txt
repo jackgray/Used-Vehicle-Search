@@ -1,0 +1,1 @@
+'atlanta', 'austin', 'boston', 'chicago', 'dallas', 'denver', 'detroit', 'houston', 'las vegas', 'los angeles', 'miami', 'minneapolis', 'new york', 'orange co', 'philadelphia', 'phoenix', 'portland', 'raleigh', 'sacramento', 'san diego', 'seattle', 'sf bayarea', 'wash dc'
