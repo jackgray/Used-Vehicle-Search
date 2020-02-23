@@ -42,14 +42,23 @@ regions[('birmingham', 'bham')] = 'bham'
 regions[('atl', 'atlanta')] = 'atlanta'
 regions[('auburn', 'aub', 'au')] = 'auburn'
 
-# Set up Google Sheets interface
-scope = ['https://spreadsheets.google.com/feeds',
-         'https://www.googleapis.com/auth/drive']
-credentials = ServiceAccountCredentials.from_json_keyfile_name('find-motorcycles.json', scope)
-gc = gspread.authorize(credentials)
-wks = gc.open("find-motorcycles").sheet1
-ss_key = '1vm_Op7XRmtHIuF8UX_B7vbatS_MPnOj5gPCv0JWy-Y0'
-wks_name = 'find-motorcycles'
+# Set search parameters
+query = args.search
+max_price = args.max_price
+min_price = '500'
+search_type = 'T'   # T = search titles only
+has_pic = '1'       # 1 = must include picture
+search_nearby = '0'
+search_distance = '200'     # search x mile radius from specified zip
+postal = '11211'
+min_cc = ''
+max_cc = ''
+query = query.replace(' ', '%20')
+page = 0
+city_urls = []
+urls = []
+craigslist = 'http://craigslist.org'
+# state_pattern = re.compile(r'(?<=">")(.*)(?=</)')   # finds state inside url
 
 # Set up Pandas data frame
 ccs = []
@@ -62,42 +71,14 @@ year = []
 make = []
 cities = []
 locales = []
-city_names = ['atlanta', 'austin', 'boston', 'chicago', 'dallas', 'denver', 'detroit', 'houston', 'las vegas', 'los angeles', 'miami', 'minneapolis', 'new york', 'orange co', 'philadelphia', 'phoenix', 'portland', 'raleigh', 'sacramento', 'san diego', 'seattle', 'sf bayarea', 'wash dc']
-city_codes = ['atlanta', 'austin', 'boston', 'chicago', 'dallas', 'denver', 'detroit', 'houston', 'lasvegas', 'losangeles', 'miami', 'minneapolis' ,'newyork', 'orangecounty', 'philadelphia', 'phoenix', 'portland', 'raleigh', 'sacramento', 'sandiego', 'seattle', 'sfbay', 'washingtondc']
 
-# Set search parameters
-region_input = tuple(input('Enter cities you want craigslist to search (separated by space (", "): ').lower().split(' '))
-query = args.search
-max_price = args.max_price
-min_price = '500'
-search_type = 'T'   # T = search titles only
-has_pic = '1'       # 1 = must include picture
-search_nearby = '0'
-search_distance = '200'     # search x mile radius from specified zip
-postal = '11211'
-min_cc = ''
-max_cc = ''
-query = query.replace(' ', '%20')
-pages = ['', '120', '240', '360', '480', '600', '720', '840']
-page = 0
+def scrape():
 
-city_urls = []
-urls = []
-craigslist = 'http://craigslist.org'
-state_pattern = re.compile(r'(?<=">")(.*)(?=</)')   # finds state inside url
-
-ignore = ['parts', 'grom', 'tank', 'motor', 'scooter', 'vespa', 'engine', 'shadow', 'tow', 'tag', 'goldwing', 'dirt', 'ruckus', 'chopper', 'virago', 'wanted', 'moped', 'scooter', 'xr', 'manual', 'cbr', 'crf', 'hondamatic', 'harley', '125', 'star', 'rebel', 'vulcan', 'cr', 'wr', 'car', 'finance', 'hyosung', 'approved', 'zero', 'financing', 'atv', 'sabre', '50', 'single-cylinder', 'can-am', 'ryker', 'spyder', 'camper', 'lineup']
-
-#TODO: refactor. refactor. refactor.
-
-if len(region_input) <= 1:
-    search_regions = city_codes
-
-    print('\nsearching entire U.S.\n')
-
-    # Perform search on each city in the nation
     for region in search_regions:
+        # Reset page number for next city
         page = 0
+
+        # Keep looping as long as a next page is detected
         while True:
             # Collect individual links from query results
             url = 'http://' + region +  '.craigslist.org/search/mca?s=' + str(page) + '&query=' +  query + '&srchType=' + search_type + '&hasPic=' + has_pic + '&min_price=' + min_price + '&max_price=' + max_price
@@ -118,8 +99,6 @@ if len(region_input) <= 1:
                 link = url.get('href')  # grabs url inside of a-tag
                 links.append(link)
 
-                # Save city from url prefix
-                # city = .replace('http://', '').replace('.craigslist.org/', '')
                 cities.append(region)
 
                 # Grab html of individual results
@@ -128,9 +107,6 @@ if len(region_input) <= 1:
                     res = session.get(link)
                     spans = BeautifulSoup(res.content, 'lxml', parse_only=SoupStrainer('span'))
                     p_tags = BeautifulSoup(res.content, 'lxml', parse_only=SoupStrainer('p'))
-
-                # print('link: ', links[-1])
-                # print('city: ', cities[-1])
 
                 # Collect price
                 price_html = spans.find_all('span', {'class': 'price'})
@@ -143,8 +119,6 @@ if len(region_input) <= 1:
                     prices.append(price)
                 else:
                     prices.append('N/A')
-
-                # print('price:', prices[-1])
 
                 # Collect Title
                 title_html = spans.find_all('span', {'id': 'titletextonly'})
@@ -235,6 +209,45 @@ if len(region_input) <= 1:
                 page = page + 120
             else:
                 break
+
+
+# Set up Google Sheets interface
+scope = ['https://spreadsheets.google.com/feeds',
+         'https://www.googleapis.com/auth/drive']
+credentials = ServiceAccountCredentials.from_json_keyfile_name('find-motorcycles.json', scope)
+gc = gspread.authorize(credentials)
+wks = gc.open("find-motorcycles").sheet1
+ss_key = '1vm_Op7XRmtHIuF8UX_B7vbatS_MPnOj5gPCv0JWy-Y0'
+wks_name = 'find-motorcycles'
+
+# Optional
+try:
+    region_input = input('Enter cities you want craigslist to search (no spaces) separated by space: ').lower().split(' ')
+except:
+    pass
+print(region_input)
+print(len(region_input))
+print(sys.getsizeof(region_input))
+# print(regions[(region_input.split(' '))])
+
+# Cities actual name
+city_names = ['atlanta', 'austin', 'boston', 'chicago', 'dallas', 'denver', 'detroit', 'houston', 'las vegas', 'los angeles', 'miami', 'minneapolis', 'new york', 'orange co', 'philadelphia', 'phoenix', 'portland', 'raleigh', 'sacramento', 'san diego', 'seattle', 'sf bayarea', 'wash dc']
+# url prefix of major cities
+city_codes = ['atlanta', 'austin', 'boston', 'chicago', 'dallas', 'denver', 'detroit', 'houston', 'lasvegas', 'losangeles', 'miami', 'minneapolis' ,'newyork', 'orangecounty', 'philadelphia', 'phoenix', 'portland', 'raleigh', 'sacramento', 'sandiego', 'seattle', 'sfbay', 'washingtondc']
+
+# Finer filter: exclude listings with these words
+ignore = ['parts', 'grom', 'tank', 'motor', 'scooter', 'vespa', 'engine', 'shadow', 'tow', 'tag', 'goldwing', 'dirt', 'ruckus', 'chopper', 'virago', 'wanted', 'moped', 'scooter', 'xr', 'manual', 'cbr', 'crf', 'hondamatic', 'harley', '125', 'star', 'rebel', 'vulcan', 'cr', 'wr', 'car', 'finance', 'hyosung', 'approved', 'zero', 'financing', 'atv', 'sabre', '50', 'single-cylinder', 'can-am', 'ryker', 'spyder', 'camper', 'lineup']
+
+#TODO: refactor. refactor. refactor.
+
+# Search entire country
+if sys.getsizeof(region_input) <= 72:
+    search_regions = city_codes
+
+    print('\nsearching entire U.S.\n')
+
+    # Perform search on each city in the nation
+    scrape()
 
 # Only search pre-selected regions
 else:
@@ -242,152 +255,10 @@ else:
     for i in regions:
         if any(x in i for x in region_input):
             search_regions.append(regions[i])
-            print('\n\nthis shit right here:'+regions[i])
-    # Perform search on each city listed in argument
-    for region in search_regions:
-        # reset page number
-        page = 0
-        # keep looping as long as a next page is detected
-        while True:
-            # Collect individual links from query results
-            url = 'http://' + region +  '.craigslist.org/search/mca?s=' + str(page) + '&query=' +  query + '&srchType=' + search_type + '&hasPic=' + has_pic + '&min_price=' + min_price + '&max_price=' + max_price
+            print('\n\nSearching '+ regions[i])
+    scrape()
 
-            # Grab results page
-            with requests.Session() as session:
-                res = session.get(url)
-                html = BeautifulSoup(res.content, 'lxml')
-
-            # Grab all a-tags (listing links)
-            link_html = html.find_all('a', {'class': 'result-title hdrlnk'})
-
-            # Next page of results exists if there is an a-tag with class "button next"
-            next_html = html.find_all('a', {'class': 'button next'})
-
-            # Access page of individual results
-            for url in link_html:
-                link = url.get('href')  # grabs url inside of a-tag
-                links.append(link)
-
-                # Save city from url prefix
-                # city = city_url.replace('http://', '').replace('.craigslist.org/', '')
-                cities.append(region)
-
-                # Grab html of individual results
-                with requests.Session() as session:
-                    print('\nmaking item request...\n')
-                    res = session.get(link)
-                    spans = BeautifulSoup(res.content, 'lxml', parse_only=SoupStrainer('span'))
-                    p_tags = BeautifulSoup(res.content, 'lxml', parse_only=SoupStrainer('p'))
-
-                # print('link: ', links[-1])
-                # print('city: ', cities[-1])
-
-                # Collect price
-                price_html = spans.find_all('span', {'class': 'price'})
-                for i in price_html:
-                    try:
-                        price = int(i.contents[0].string.strip('$'))
-                    except:
-                        price = 'N/A'
-                if price:
-                    prices.append(price)
-                else:
-                    prices.append('N/A')
-
-                # print('price:', prices[-1])
-
-                # Collect Title
-                title_html = spans.find_all('span', {'id': 'titletextonly'})
-                for i in title_html:
-                    title = i.text
-                    title = ''.join(title) # list by default / convert to string
-                    titles.append(title)
-                    # print('title: ', titles[-1])
-
-                # Collect location
-                try:
-                    locales.append(spans.find_all('small')[0].text.lstrip(' (').rstrip(')'))
-                except:
-                    locales.append('N/A')
-                # print('locale: ', locales[-1])
-
-                # Find vehicle name info
-                name_html = p_tags.find_all('p', {'class': 'attrgroup'})
-                if name_html:
-                    name = name_html[0].find_next('b').text.lstrip(' ')
-                    name = name.split(' ')  # parse name into components
-
-                    # Vehicle name section is unformated--could include any combination of year/make/model/engine size
-                    # Determine if year is included in vehicle name
-                    if len(name[0]) > 4:    # year is 4 chars; if first item is more than that then assume the date is not given and that the first item is
-                        try:
-                            make.append(name[0])
-                            year.append('N/A')      # assume year not given
-                        except:
-                            make.append('N/A')
-                        try:
-                            model.append(' '.join(name[1:])) # rest of the words probably belong to the model
-                        except:
-                            model.append('N/A')
-                    else:
-                        try:
-                            make.append(name[1])    # typical order is year, make, model, engine size
-                        except:
-                            make.append('N/A')
-                        try:
-                            model.append(' '.join(name[2:]))
-                        except:
-                            model.append('N/A')
-                        try:
-                            year.append(name[0])    # 4 or less chars in first word probably is the date
-                        except:
-                            year.append('N/A')
-                else:
-                    model.append('N/A')
-                    year.append('N/A')
-                    make.append('N/A')
-
-                # print('year: ', year[-1])
-                # print('make: ', make[-1])
-                # print('model: ', model[-1])
-
-                # Collect miles
-                odom_html = spans.find_all(text=re.compile('odometer:'))
-                # First determine if poster specified mileage
-                if odom_html:
-                    for i in odom_html:
-                        try:
-                            miles.append(i.find_next('b').text)
-                        except:
-                            miles.append('N/A')
-                else:
-                    miles.append('N/A')
-                # print('miles = ', miles[-1])
-
-                # Collect engine size
-                cc_html = spans.find_all(text=re.compile('engine displacement \(CC\)'))
-                # First determine if poster specified engine size
-                if cc_html:
-                    for i in cc_html:
-                        try:
-                            ccs.append(i.find_next('b').text)
-                        except:
-                            ccs.append('N/A')
-                else:
-                    ccs.append('N/A')
-                # print('displacement = ', ccs[-1])
-
-            # Determine if there is a next page
-            next_button = []
-            for n in next_html:
-                next_button = n.get('href')
-
-            if len(next_button) > 0:    # if there is an href in next button html then there is another page. CL pages are notated in intervals of 120
-                page = page + 120
-            else:
-                break
-
-
+# Debugging
 print('prices: ')
 count = 0
 for i in prices:
@@ -438,16 +309,15 @@ print('title: ', len(titles))
 df = pd.DataFrame({'Price': prices, 'City': cities, 'Year': year, 'Mileage': miles, 'Engine Size': ccs, 'Make': make, 'Model': model, 'Title': titles, 'Locale': locales, 'Link': links})
 pd.set_option("display.max_colwidth", 10000)
 
-# df = df[df.Title.str.contains('honda cb|yamaha sr')].sort_values('Price')
 
 # print('\nFiltering unwanted keywords...\n')
-
 if args.ignore:
     ignore = args.ignore
 
 for i in ignore:
     df = df[~df.Title.astype(str).str.contains(i)].sort_values('Price').drop_duplicates()
 
+# >>> For checking if new listings exist <<<
 # print(newdf)
 # Max Price
 # newdf = df[(df.Price == 0) | ((df.Price < max_price) & (df.Price > min_price))].sort_values('Price').drop_duplicates()
@@ -468,7 +338,6 @@ for i in ignore:
 # diff_df = df_concat.drop_duplicates(keep=False)
 
 # Send an email for new results
-
 # if diff_df.empty == False:
 #     # Set up email server
 #     port = 465

@@ -1,6 +1,43 @@
+from lxml import html
+from bs4 import BeautifulSoup
+from bs4 import SoupStrainer
+import requests
+import re
+
+def scrape(args, search_regions):
+    # Set up Pandas data frame
+    ccs = []
+    prices = []
+    titles = []
+    links = []
+    miles = []
+    model = []
+    year = []
+    make = []
+    cities = []
+    locales = []
+
+    # Set search parameters
+
+    query = args.search
+    max_price = args.max_price
+    min_price = '500'
+    search_type = 'T'   # T = search titles only
+    has_pic = '1'       # 1 = must include picture
+    search_nearby = '0'
+    search_distance = '200'     # search x mile radius from specified zip
+    postal = '11211'
+    min_cc = ''
+    max_cc = ''
+    query = query.replace(' ', '%20')
+    page = 0
+
+    city_urls = []
+    urls = []
+    craigslist = 'http://craigslist.org'
+    # state_pattern = re.compile(r'(?<=">")(.*)(?=</)')   # finds state inside url
 
 
- def scrape():
     for region in search_regions:
         # reset page number
         page = 0
@@ -141,3 +178,4 @@
                 page = page + 120
             else:
                 break
+    return prices
