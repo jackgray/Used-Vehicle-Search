@@ -17,6 +17,9 @@ import gspread
 from df2gspread import df2gspread as d2g
 from oauth2client.service_account import ServiceAccountCredentials
 
+# Debugging Mode?
+debug = True
+
 # Set up argument parser
 parser = argparse.ArgumentParser(description='Search motorcycles all over the US', prefix_chars='-')
 parser.add_argument('search',
@@ -30,17 +33,20 @@ args = parser.parse_args()
 # t['nyc/newyork'] = 'newyork'
 # t['newjersey/jersey/nj'] = 'newjersey'
 
-# pygtrie is not working
+# pygtrie alternative
 # Define search region dictionary for CLI user input
 regions = {}
-regions[('nyc', 'new york', 'newyork')] = 'newyork'
+regions[('nyc', 'ny', 'new york', 'newyork')] = 'newyork'
 regions[('long island', 'li', 'longisland')] = 'longisland'
-regions[('hudsonvalley', 'hudson valley')] = 'hudsonvalley'
+regions[('hv', 'hudsonvalley', 'hudson valley')] = 'hudsonvalley'
 regions[('jersey', 'north jersey', 'northjersey', 'nj', 'new jersey', 'newjersey')] = 'newjersey'
 regions[('san fransisco', 'sf', 'sanfransisco', 'sfbay')] = 'sfbay'
 regions[('birmingham', 'bham')] = 'bham'
 regions[('atl', 'atlanta')] = 'atlanta'
 regions[('auburn', 'aub', 'au')] = 'auburn'
+regions[('phili', 'philadelphia')] = 'philadelphia'
+regions[('boston')] = 'boston'
+regions[('dc', 'washdc', 'washingtondc')] = 'washingtondc'
 
 # Set search parameters
 query = args.search
@@ -70,10 +76,41 @@ model = []
 year = []
 make = []
 cities = []
-locales = []
+neighborhoods = []
 
-def scrape():
+# Set up Google Sheets interface
+scope = ['https://spreadsheets.google.com/feeds',
+         'https://www.googleapis.com/auth/drive']
+credentials = ServiceAccountCredentials.from_json_keyfile_name('find-motorcycles.json', scope)
+gc = gspread.authorize(credentials)
+wks = gc.open("find-motorcycles").sheet1
+ss_key = '1vm_Op7XRmtHIuF8UX_B7vbatS_MPnOj5gPCv0JWy-Y0'
+wks_name = 'find-motorcycles'
 
+# Optional
+try:
+    region_input = input('Enter cities you want craigslist to search (no spaces) separated by space: ').lower().split(' ')
+except:
+    pass
+
+if debug == True:
+    print('city input: ', region_input)
+    print('length of city input: ', len(region_input))
+    print('byte size of city input: ', sys.getsizeof(region_input))
+    # print(regions[(region_input.split(' '))])
+
+# Cities actual name
+city_names = ['atlanta', 'austin', 'boston', 'chicago', 'dallas', 'denver', 'detroit', 'houston', 'las vegas', 'los angeles', 'miami', 'minneapolis', 'new york', 'orange co', 'philadelphia', 'phoenix', 'portland', 'raleigh', 'sacramento', 'san diego', 'seattle', 'sf bayarea', 'wash dc']
+# url prefix of major cities
+city_codes = ['atlanta', 'austin', 'boston', 'chicago', 'dallas', 'denver', 'detroit', 'houston', 'lasvegas', 'losangeles', 'miami', 'minneapolis' ,'newyork', 'orangecounty', 'philadelphia', 'phoenix', 'portland', 'raleigh', 'sacramento', 'sandiego', 'seattle', 'sfbay', 'washingtondc']
+
+# Finer filter: exclude listings with these words
+ignore = ['parts', 'tank', 'motor', 'engine', 'tow', 'tag', 'dirt', 'chopper',  'wanted', 'manual', 'finance', 'approved', 'zero', 'financing', 'atv', '50', 'single-cylinder', 'can-am', 'ryker', 'spyder', 'camper', 'lineup']
+
+#TODO: refactor. refactor. refactor.
+
+# Main scrape function
+def scrape(search_regions):
     for region in search_regions:
         # Reset page number for next city
         page = 0
@@ -96,7 +133,7 @@ def scrape():
 
             # Access page of each listing
             for url in link_html:
-                link = url.get('href')  # grabs url inside of a-tag
+                link = url.get('href')  # grab url inside of a-tag
                 links.append(link)
 
                 cities.append(region)
@@ -128,12 +165,14 @@ def scrape():
                     titles.append(title)
                     # print('title: ', titles[-1])
 
-                # Collect location
+                # Collect neighborhood if provided
                 try:
-                    locales.append(spans.find_all('small')[0].text.lstrip(' (').rstrip(')'))
+                    neighborhoods.append(spans.find_all('small')[0].text.lstrip(' (').rstrip(')'))
                 except:
-                    locales.append('N/A')
-                # print('locale: ', locales[-1])
+                    neighborhoods.append('N/A')
+
+                if debug == True:
+                    print('neighborhood: ', neighborhoods[-1])
 
                 # Find vehicle name info
                 name_html = p_tags.find_all('p', {'class': 'attrgroup'})
@@ -170,9 +209,10 @@ def scrape():
                     year.append('N/A')
                     make.append('N/A')
 
-                # print('year: ', year[-1])
-                # print('make: ', make[-1])
-                # print('model: ', model[-1])
+                if debug == True:
+                    print('year: ', year[-1])
+                    print('make: ', make[-1])
+                    print('model: ', model[-1])
 
                 # Collect miles
                 odom_html = spans.find_all(text=re.compile('odometer:'))
@@ -185,7 +225,9 @@ def scrape():
                             miles.append('N/A')
                 else:
                     miles.append('N/A')
-                # print('miles = ', miles[-1])
+
+                if debug == True:
+                    print('miles = ', miles[-1])
 
                 # Collect engine size
                 cc_html = spans.find_all(text=re.compile('engine displacement \(CC\)'))
@@ -198,7 +240,9 @@ def scrape():
                             ccs.append('N/A')
                 else:
                     ccs.append('N/A')
-                # print('displacement = ', ccs[-1])
+
+                if debug == True:
+                    print('displacement = ', ccs[-1])
 
             # Determine if there is a next page
             next_button = []
@@ -210,44 +254,15 @@ def scrape():
             else:
                 break
 
-
-# Set up Google Sheets interface
-scope = ['https://spreadsheets.google.com/feeds',
-         'https://www.googleapis.com/auth/drive']
-credentials = ServiceAccountCredentials.from_json_keyfile_name('find-motorcycles.json', scope)
-gc = gspread.authorize(credentials)
-wks = gc.open("find-motorcycles").sheet1
-ss_key = '1vm_Op7XRmtHIuF8UX_B7vbatS_MPnOj5gPCv0JWy-Y0'
-wks_name = 'find-motorcycles'
-
-# Optional
-try:
-    region_input = input('Enter cities you want craigslist to search (no spaces) separated by space: ').lower().split(' ')
-except:
-    pass
-print(region_input)
-print(len(region_input))
-print(sys.getsizeof(region_input))
-# print(regions[(region_input.split(' '))])
-
-# Cities actual name
-city_names = ['atlanta', 'austin', 'boston', 'chicago', 'dallas', 'denver', 'detroit', 'houston', 'las vegas', 'los angeles', 'miami', 'minneapolis', 'new york', 'orange co', 'philadelphia', 'phoenix', 'portland', 'raleigh', 'sacramento', 'san diego', 'seattle', 'sf bayarea', 'wash dc']
-# url prefix of major cities
-city_codes = ['atlanta', 'austin', 'boston', 'chicago', 'dallas', 'denver', 'detroit', 'houston', 'lasvegas', 'losangeles', 'miami', 'minneapolis' ,'newyork', 'orangecounty', 'philadelphia', 'phoenix', 'portland', 'raleigh', 'sacramento', 'sandiego', 'seattle', 'sfbay', 'washingtondc']
-
-# Finer filter: exclude listings with these words
-ignore = ['parts', 'grom', 'tank', 'motor', 'scooter', 'vespa', 'engine', 'shadow', 'tow', 'tag', 'goldwing', 'dirt', 'ruckus', 'chopper', 'virago', 'wanted', 'moped', 'scooter', 'xr', 'manual', 'cbr', 'crf', 'hondamatic', 'harley', '125', 'star', 'rebel', 'vulcan', 'cr', 'wr', 'car', 'finance', 'hyosung', 'approved', 'zero', 'financing', 'atv', 'sabre', '50', 'single-cylinder', 'can-am', 'ryker', 'spyder', 'camper', 'lineup']
-
-#TODO: refactor. refactor. refactor.
-
 # Search entire country
 if sys.getsizeof(region_input) <= 72:
     search_regions = city_codes
 
-    print('\nsearching entire U.S.\n')
+    if debug == True:
+        print('\nsearching entire U.S.\n')
 
     # Perform search on each city in the nation
-    scrape()
+    scrape(search_regions)
 
 # Only search pre-selected regions
 else:
@@ -255,62 +270,66 @@ else:
     for i in regions:
         if any(x in i for x in region_input):
             search_regions.append(regions[i])
-            print('\n\nSearching '+ regions[i])
-    scrape()
+            print('\nSearching '+ regions[i])
+    scrape(search_regions)
 
 # Debugging
-print('prices: ')
-count = 0
-for i in prices:
-    count = count + 1
-    print(count, ' ', i)
-print('year: ')
-count = 0
-for i in year:
-    count = count + 1
-    print(count, ' ', i)
-count = 0
-print('titles: ')
-for i in titles:
-    count = count + 1
-    print(count, ' ', i)
-print('miles: ')
-count = 0
-for i in miles:
-    count = count + 1
-    print(count, ' ', i)
-count = 0
-print(len(links))
-print('links: ')
-for i in links:
-    count = count + 1
-    print(count, ' ', i)
-print('ccs: ')
-count = 0
-for i in ccs:
-    count = count + 1
-    print(count, ' ', i)
-print('model: ')
-count=0
-for i in model:
-    count = count + 1
-    print(count, ' ', i)
-print('price: ', len(prices))
-print('city: ', len(cities))
-print('year: ', len(year))
-print('miles: ', len(miles))
-print('ccs: ', len(ccs))
-print('model: ', len(model))
-print('make: ', len(make))
-print('locale: ', len(locales))
-print('title: ', len(titles))
+if debug == True:
+    print('\nprices: ')
+    count = 0
+    for i in prices:
+        count = count + 1
+        print(count, ' ', i)
+    print('year: ')
+    count = 0
+    for i in year:
+        count = count + 1
+        print(count, ' ', i)
+    count = 0
+    print('titles: ')
+    for i in titles:
+        count = count + 1
+        print(count, ' ', i)
+    print('miles: ')
+    count = 0
+    for i in miles:
+        count = count + 1
+        print(count, ' ', i)
+    count = 0
+    print(len(links))
+    print('links: ')
+    for i in links:
+        count = count + 1
+        print(count, ' ', i)
+    print('ccs: ')
+    count = 0
+    for i in ccs:
+        count = count + 1
+        print(count, ' ', i)
+    print('model: ')
+    count=0
+    for i in model:
+        count = count + 1
+        print(count, ' ', i)
+    print('price: ', len(prices))
+    print('city: ', len(cities))
+    print('year: ', len(year))
+    print('miles: ', len(miles))
+    print('ccs: ', len(ccs))
+    print('model: ', len(model))
+    print('make: ', len(make))
+    print('neighborhoods: ', len(neighborhoods))
+    print('title: ', len(titles))
 
 # Add results to dataframe
-df = pd.DataFrame({'Price': prices, 'City': cities, 'Year': year, 'Mileage': miles, 'Engine Size': ccs, 'Make': make, 'Model': model, 'Title': titles, 'Locale': locales, 'Link': links})
-pd.set_option("display.max_colwidth", 10000)
+try:
+    df = pd.DataFrame({'Price': prices, 'City': cities, 'Year': year, 'Mileage': miles, 'Engine Size': ccs, 'Make': make, 'Model': model, 'Title': titles, 'Neighborhood': neighborhoods, 'Link': links})
+    pd.set_option("display.max_colwidth", 10000)
+except:
+    print('Could not add results to dataframe')
 
-
-# print('\nFiltering unwanted keywords...\n')
+if debug == True:
+    print('\nFiltering unwanted keywords...\n')
 if args.ignore:
     ignore = args.ignore
 
@@ -372,6 +391,5 @@ with open('results.txt', mode='w') as tmp:
 # Send dataframe to google sheets
 print('\nSending filtered results to google sheets at https://docs.google.com/spreadsheets/d/1vm_Op7XRmtHIuF8UX_B7vbatS_MPnOj5gPCv0JWy-Y0/edit#gid=0')
 d2g.upload(updated, ss_key, wks_name, credentials=credentials, row_names=True)
-
 
 # df.to_csv(filepath, index=False)
