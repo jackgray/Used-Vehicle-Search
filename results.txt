@@ -1,24 +1,285 @@
-	Price	City	Year	Mileage	Engine Size	Make	Model	Title	Locale	Link
-1	750	newyork	N/A	N/A	N/A	ducati	monster 750	Ducati monster 750(Sold as is)	Bronx ny	https://newyork.craigslist.org/brx/mcy/d/bronx-ducati-monster-750sold-as-is/7079786469.html
-13	750	newjersey	N/A	N/A	N/A	ducati	monster 750	Ducati monster 750(Sold as is)	Bronx ny	https://newyork.craigslist.org/brx/mcy/d/bronx-ducati-monster-750sold-as-is/7079786469.html
-0	2500	newyork	2005	14500	620	ducati	monster	2005 Ducati Monster 620	Fort Green	https://newyork.craigslist.org/brk/mcy/d/brooklyn-2005-ducati-monster-620/7079936317.html
-12	2500	newjersey	2005	14500	620	ducati	monster	2005 Ducati Monster 620	Fort Green	https://newyork.craigslist.org/brk/mcy/d/brooklyn-2005-ducati-monster-620/7079936317.html
-10	2800	newyork	1999	14780	900	ducati	900 ss	1999 Ducati 900 SS	Goshen	https://hudsonvalley.craigslist.org/mcy/d/goshen-1999-ducati-900-ss/7067374301.html
-21	2800	newjersey	1999	14780	900	ducati	900 ss	1999 Ducati 900 SS	Goshen	https://hudsonvalley.craigslist.org/mcy/d/goshen-1999-ducati-900-ss/7067374301.html
-20	2998	newjersey	2007	40139	N/A	Ducati	Monster S2R 800	2007 Ducati Monster S2R 800 (D-B103599)	Cross Country Powersports - Metuchen NJ 08840	https://cnj.craigslist.org/mcd/d/edison-2007-ducati-monster-s2r-800/7065341600.html
-8	2998	newyork	2007	40139	N/A	Ducati	Monster S2R 800	2007 Ducati Monster S2R 800 (D-B103599)	Cross Country Powersports - Metuchen NJ 08840	https://cnj.craigslist.org/mcd/d/edison-2007-ducati-monster-s2r-800/7065341600.html
-3	3500	newyork	N/A	N/A	N/A	ducati	monster 620	2006 Ducati Monster 620 Dark	Staten Island	https://newyork.craigslist.org/stn/mcy/d/staten-island-2006-ducati-monster-620/7076642837.html
-15	3500	newjersey	N/A	N/A	N/A	ducati	monster 620	2006 Ducati Monster 620 Dark	Staten Island	https://newyork.craigslist.org/stn/mcy/d/staten-island-2006-ducati-monster-620/7076642837.html
-4	3800	newyork	2007	7000	1000	ducati	multistrada 1000ds	2007 Ducati Multistrada 1000DS	Long Island City	https://newyork.craigslist.org/que/mcy/d/long-island-city-2007-ducati/7069927069.html
-16	3800	newjersey	2007	7000	1000	ducati	multistrada 1000ds	2007 Ducati Multistrada 1000DS	Long Island City	https://newyork.craigslist.org/que/mcy/d/long-island-city-2007-ducati/7069927069.html
-19	4900	newjersey	2007	16367	800	Ducati	Monster S2R	Ducati Monster S2R 800	Glen Head	https://newyork.craigslist.org/lgi/mcy/d/glen-head-ducati-monster-s2r-800/7066467674.html
-18	4900	newjersey	2007	16367	800	Ducati	monster s2r	Ducati Monster S2R 800	Glen Head	https://newyork.craigslist.org/mnh/mcy/d/glen-head-ducati-monster-s2r-800/7066469212.html
-17	4900	newjersey	2007	16367	800	Ducati	Monster S2R	Ducati Monster S2R 800	Glen Head	https://newyork.craigslist.org/brk/mcy/d/glen-head-ducati-monster-s2r-800/7066468460.html
-22	4900	newjersey	2007	16367	800	ducati	monster s2r 800	Cafe racer Ducati S2R Monster	Glen head	https://longisland.craigslist.org/mcy/d/glen-head-cafe-racer-ducati-s2r-monster/7077119121.html
-9	4900	newyork	2007	16367	800	ducati	monster s2r 800	Cafe racer Ducati S2R Monster	Glen head	https://longisland.craigslist.org/mcy/d/glen-head-cafe-racer-ducati-s2r-monster/7077119121.html
-7	4900	newyork	2007	16367	800	Ducati	Monster S2R	Ducati Monster S2R 800	Glen Head	https://newyork.craigslist.org/lgi/mcy/d/glen-head-ducati-monster-s2r-800/7066467674.html
-6	4900	newyork	2007	16367	800	Ducati	monster s2r	Ducati Monster S2R 800	Glen Head	https://newyork.craigslist.org/mnh/mcy/d/glen-head-ducati-monster-s2r-800/7066469212.html
-5	4900	newyork	2007	16367	800	Ducati	Monster S2R	Ducati Monster S2R 800	Glen Head	https://newyork.craigslist.org/brk/mcy/d/glen-head-ducati-monster-s2r-800/7066468460.html
-2	4900	newyork	2009	9000	696	ducati	monster	DUCATI Monster 696	Brooklyn	https://newyork.craigslist.org/brk/mcy/d/brooklyn-ducati-monster-696/7077909485.html
-14	4900	newjersey	2009	9000	696	ducati	monster	DUCATI Monster 696	Brooklyn	https://newyork.craigslist.org/brk/mcy/d/brooklyn-ducati-monster-696/7077909485.html
-11	5000	newyork	2001	28630	748	ducati	748	2001 Ducati 748	Meriden	https://newhaven.craigslist.org/mcy/d/meriden-2001-ducati-748/7077351858.html
+	Price	City	Year	Mileage	Engine Size	Make	Model	Title	Neighborhood	Link
+17	500	newyork	1985	N/A	153	honda	elite 150	1985 Honda Elite 150	Astoria	https://newyork.craigslist.org/que/mcy/d/astoria-1985-honda-elite-150/7080996574.html
+170	500	newjersey	1986	N/A	N/A	kawaski	Concours	Kawasaki Concours 1986 $500	Leonia, NJ	https://newjersey.craigslist.org/mcy/d/leonia-kawasaki-concours/7081231403.html
+152	550	newyork	2014	N/A	50	Lance	pch50	Lance PCH 50cc moped	N/A	https://newyork.craigslist.org/wch/mcy/d/dover-plains-lance-pch-50cc-moped/7066191511.html
+222	600	newjersey	2014	553	49	bintelli	scorch	Bintelli Scorch Scooter	Hewitt	https://newjersey.craigslist.org/mcy/d/hewitt-bintelli-scorch-scooter/7070974967.html
+111	625	newyork	N/A	N/A	N/A	Italjet		2001 italjet 50cc Scooters	N/A	https://newyork.craigslist.org/brk/mcy/d/brooklyn-2001-italjet-50cc-scooters/7070688647.html
+64	750	newyork	Bird	N/A	N/A	One		selling new Bird scooter	Upper East Side	https://newyork.craigslist.org/mnh/mcy/d/new-york-selling-new-bird-scooter/7077210559.html
+34	750	newyork	N/A	N/A	N/A	ducati	monster 750	Ducati monster 750(Sold as is)	Bronx ny	https://newyork.craigslist.org/brx/mcy/d/bronx-ducati-monster-750sold-as-is/7079786469.html
+279	750	newjersey	2001	365	50	yamaha	vino 50	Yamaha Vino 50cc Scooter	Middletown	https://hudsonvalley.craigslist.org/mcy/d/middletown-yamaha-vino-50cc-scooter/7081775640.html
+174	800	newjersey	2003	N/A	50	Honda	XR50R	Honda XR50R Dirt Bike 4 Stroke	West Milford	https://newjersey.craigslist.org/mcy/d/west-milford-honda-xr50r-dirt-bike-4/7080623698.html
+62	800	newyork	2019	150	N/A	L5+		Eco Reco L5+ for sale	East Village	https://newyork.craigslist.org/mnh/mcy/d/new-york-eco-reco-l5-for-sale/7077370751.html
+98	800	newyork	1975	N/A	N/A	Honda	cb 550	1975 Honda CB 550	Bay Shore	https://newyork.craigslist.org/lgi/mcy/d/brightwaters-1975-honda-cb-550/7072285950.html
+180	800	newjersey	N/A	14000	600	Yamaha	Radian	Yamaha Radian 1986	Newton	https://newjersey.craigslist.org/mcy/d/newton-yamaha-radian-1986/7079860403.html
+263	950	newjersey	N/A	163	150	Motobravo	Roma	Super Cool Scooter/Motorcycle	Hopewell Junction	https://newyork.craigslist.org/wch/mcy/d/hopewell-junction-super-cool-scooter/7081870040.html
+9	950	newyork	N/A	163	150	Motobravo	Roma	Super Cool Scooter/Motorcycle	Hopewell Junction	https://newyork.craigslist.org/wch/mcy/d/hopewell-junction-super-cool-scooter/7081870040.html
+181	950	newjersey	2002	1324	N/A	yamaha	zuma	2002 Yamaha Zuma 50cc	N/A	https://newjersey.craigslist.org/mcy/d/sloatsburg-2002-yamaha-zuma-50cc/7079813123.html
+75	950	newyork	2012	200	49	Kymco	Like 50 2T	2012 Kymco Like 50 2T	Stamford	https://newyork.craigslist.org/fct/mcy/d/stamford-2012-kymco-like-50-2t/7075792540.html
+169	950	newjersey	1993	1115	250	honda	nighthawk 250	1993 Honda Night Hawk 250 cc	Dumont	https://newjersey.craigslist.org/mcy/d/dumont-1993-honda-night-hawk-250-cc/7081336985.html
+84	960	newyork	2020	0	50	Taotao	50	50cc Street Legal Gas Moped Scooter, Like New 2020	Rego Park, Queens	https://newyork.craigslist.org/que/mcy/d/rego-park-50cc-street-legal-gas-moped/7073823961.html
+58	999	newyork	2020	N/A	N/A	Sccotstar		ScootStar 50CC Scooters NEW 2020	Island Park	https://newyork.craigslist.org/lgi/mcd/d/island-park-scootstar-50cc-scooters-new/7078101217.html
+15	1000	newyork	N/A	N/A	N/A	Shmwy		Electric moped scooter	Brooklyn	https://newyork.craigslist.org/brk/mcy/d/brooklyn-electric-moped-scooter/7081130916.html
+128	1000	newyork	1999	13715	800	suzuki	intruder 800	1999 Suzuki Intruder 800	Bronx	https://newyork.craigslist.org/brx/mcy/d/bronx-1999-suzuki-intruder-800/7069506844.html
+107	1000	newyork	1986	1400	200	Suzuki	DR200	Suzuki DR 200 1986	South Orange	https://newyork.craigslist.org/jsy/mcy/d/south-orange-suzuki-dr/7071202944.html
+22	1050	newyork	2020	N/A	50	tao	tao	I'm selling my scooter	Harlem or Washingtonheights	https://newyork.craigslist.org/mnh/mcy/d/new-york-im-selling-my-scooter/7080710331.html
+121	1100	newyork	1982	N/A	N/A	honda	cx500	1982 honda cx500	N/A	https://newyork.craigslist.org/lgi/mcy/d/valley-stream-1982-honda-cx500/7069833919.html
+260	1100	newjersey	N/A	N/A	N/A	Honda	cbr600	Cbr600	N/A	https://newyork.craigslist.org/lgi/mcy/d/wantagh-cbr600/7082342117.html
+6	1100	newyork	N/A	N/A	N/A	Honda	cbr600	Cbr600	N/A	https://newyork.craigslist.org/lgi/mcy/d/wantagh-cbr600/7082342117.html
+14	1100	newyork	1978	0	49	Puch	Pinto	1978 Puch Pinto Moped	Sunnyside	https://newyork.craigslist.org/que/mcy/d/sunnyside-1978-puch-pinto-moped/7081178895.html
+254	1200	newjersey	N/A	N/A	N/A	honda	nighthawk	1984 Honda Nighthawk 650	Brewster	https://newyork.craigslist.org/wch/mcy/d/brewster-1984-honda-nighthawk-650/7082608114.html
+167	1200	newjersey	1976	N/A	N/A	Honda	XL100	1976 Honda XL100 Enduro Dual Sport -OBO	N/A	https://newjersey.craigslist.org/mcy/d/madison-1976-honda-xl100-enduro-dual/7081544711.html
+159	1200	newyork	N/A	N/A	N/A	honda	shadow	1991 Honda shadow vlx 600	N/A	https://newyork.craigslist.org/que/mcy/d/woodside-1991-honda-shadow-vlx-600/7064655122.html
+0	1200	newyork	N/A	N/A	N/A	honda	nighthawk	1984 Honda Nighthawk 650	Brewster	https://newyork.craigslist.org/wch/mcy/d/brewster-1984-honda-nighthawk-650/7082608114.html
+257	1200	newjersey	2020	N/A	N/A	Scootstar	Racestar 50	Racestar 50CC Scooters NEW 2020	Island Park	https://newyork.craigslist.org/lgi/mcd/d/island-park-racestar-50cc-scooters-new/7082503698.html
+273	1200	newjersey	N/A	N/A	N/A	SUZUKI	KTM	1990 SUZUKI DR350 2004 KTM 65 SX	BRICK, NJ	https://jerseyshore.craigslist.org/mcy/d/brick-1990-suzuki-dr-ktm-65-sx/7081218283.html
+3	1200	newyork	2020	N/A	N/A	Scootstar	Racestar 50	Racestar 50CC Scooters NEW 2020	Island Park	https://newyork.craigslist.org/lgi/mcd/d/island-park-racestar-50cc-scooters-new/7082503698.html
+229	1234	newjersey	N/A	N/A	N/A	British		BSA, Triumph,  Wanted  $$	Jersey City	https://newjersey.craigslist.org/mcy/d/jersey-city-bsa-triumph-wanted/7069557761.html
+256	1299	newjersey	N/A	N/A	N/A	Scootstar	RogueStar	Rogue Star 50CC Scooters NEW 2020	Island Park	https://newyork.craigslist.org/lgi/mcd/d/island-park-rogue-star-50cc-scooters/7082517370.html
+2	1299	newyork	N/A	N/A	N/A	Scootstar	RogueStar	Rogue Star 50CC Scooters NEW 2020	Island Park	https://newyork.craigslist.org/lgi/mcd/d/island-park-rogue-star-50cc-scooters/7082517370.html
+69	1300	newyork	1989	13000	599	Yamaha	Radian	89 Yamaha Radian	Monroe	https://newyork.craigslist.org/fct/mcy/d/trumbull-89-yamaha-radian/7076603082.html
+16	1300	newyork	1989	13000	599	Yamaha	Radian	89 Yamaha Radian	Monroe	https://newyork.craigslist.org/fct/mcy/d/trumbull-89-yamaha-radian/7081005459.html
+179	1350	newjersey	N/A	N/A	N/A	harley	davidson	1973 AMF Z90	WEST MILFORD	https://newjersey.craigslist.org/mcy/d/newfoundland-1973-amf-z90/7080180407.html
+116	1400	newyork	P310	N/A	N/A	N/A		P310 Power Wheelchair	Bronx	https://newyork.craigslist.org/brx/mcy/d/bronx-p310-power-wheelchair/7070387406.html
+280	1400	newjersey	N/A	N/A	N/A	Rollgood		Scooter electric 40mph	Jericho	https://longisland.craigslist.org/mcy/d/jericho-scooter-electric-40mph/7082614040.html
+55	1499	newyork	2018	N/A	N/A	kymco	agility 125	2019 KYMCO AGILITY 125	BROOKLYN	https://newyork.craigslist.org/brk/mcd/d/2019-kymco-agility-125/7078554871.html
+26	1500	newyork	N/A	N/A	N/A	Yamaha	 chappy	1980 yamaha chappy 50cc	Glen rock	https://newyork.craigslist.org/jsy/mcy/d/paterson-1980-yamaha-chappy-50cc/7080450031.html
+146	1500	newyork	2019	1500	312	yamaha		Brand New Yamaha R3	New Jersey	https://newyork.craigslist.org/jsy/mcd/d/brooklyn-brand-new-yamaha-r3/7067395701.html
+106	1500	newyork	2008	17200	N/A	Yamaha	Majesty 400	2008 Yamaha Majesty	Bensonhurst, Brooklyn	https://newyork.craigslist.org/brk/mcy/d/brooklyn-2008-yamaha-majesty/7071226643.html
+203	1500	newjersey	2009	55000	500	Suzuki	GS500F	Suzuki GS500F	Washington (Warren Co.	https://newjersey.craigslist.org/mcy/d/washington-suzuki-gs500f/7074941984.html
+137	1500	newyork	1999	197	1800	Toyota	Corolla	Dependable Car for Regular Use	Ozone Park	https://newyork.craigslist.org/que/mcy/d/ozone-park-dependable-car-for-regular/7068696425.html
+44	1700	newyork	2020	N/A	N/A	Ice	bear Maddog	Ice Bear Maddog Mad Dog 150cc & 50cc	Island Park	https://newyork.craigslist.org/lgi/mcd/d/island-park-ice-bear-maddog-mad-dog/7078739479.html
+199	1750	newjersey	2003	18000	N/A	suzuki	sv 650	REDUCED! 2003 Suzuki SV650	Morristown	https://newjersey.craigslist.org/mcy/d/reduced-2003-suzuki-sv650/7075976804.html
+158	1750	newyork	2006	5000	250	kawasaki	ninja 250	2006 Ninja 250 Ex for sale	Dix Hills	https://newyork.craigslist.org/lgi/mcy/d/huntington-station-2006-ninja-250-ex/7064897914.html
+142	1750	newyork	2009	5900	N/A	vespa	lx150	2009 Vespa LX150, 2013 S150, &15  GTS300 ABS	Ozone park	https://newyork.craigslist.org/que/mcy/d/ozone-park-2009-vespa-lx-s-gts300-abs/7068305473.html
+210	1750	newjersey	1985	27394	1165	suzuki	madura	***1985 Suzuki 1200 Madura***	Wallington	https://newjersey.craigslist.org/mcy/d/passaic-1985-suzuki-1200-madura/7073478934.html
+54	1799	newyork	2018	N/A	N/A	kymco	agility 125	2020 KYMCO AGILITY 125	BROOKLYN	https://newyork.craigslist.org/brk/mcd/d/2020-kymco-agility-125/7078557260.html
+105	1800	newyork	2004	N/A	250	Honda	Rebel	2004 Honda Rebel 250	Cliffside Park, NJ	https://newyork.craigslist.org/jsy/mcy/d/cliffside-park-2004-honda-rebel-250/7071262375.html
+190	1800	newjersey	N/A	N/A	220	Kawasaki	KDX 220	2003 Kawasaki KDX 220	N/A	https://newjersey.craigslist.org/mcy/d/lake-hiawatha-2003-kawasaki-kdx-220/7078620071.html
+30	1900	newyork	1992	N/A	750	honda	cb750 nighthawk	1992 Honda CB750 Nighthawk	Upper West Side	https://newyork.craigslist.org/mnh/mcy/d/new-york-1992-honda-cb750-nighthawk/7080107698.html
+262	1900	newjersey	1992	N/A	750	honda	cb750 nighthawk	1992 Honda CB750 Nighthawk	Upper West Side	https://newyork.craigslist.org/mnh/mcy/d/new-york-1992-honda-cb750-nighthawk/7081973878.html
+235	1900	newjersey	1996	N/A	1100	Honda		HONDA SHADOW 1100 AMERICAN CLASSIC EDITION	FLYKITTY MOTORSPORTS.COM	https://newjersey.craigslist.org/mcd/d/monticello-honda-shadow-1100-american/7068802799.html
+8	1900	newyork	1992	N/A	750	honda	cb750 nighthawk	1992 Honda CB750 Nighthawk	Upper West Side	https://newyork.craigslist.org/mnh/mcy/d/new-york-1992-honda-cb750-nighthawk/7081973878.html
+27	1950	newyork	N/A	N/A	N/A	Suzuki		1975 suzuki ts 75 all original 235 miles	Glen rock	https://newyork.craigslist.org/jsy/mcy/d/glen-rock-1975-suzuki-ts-75-all/7080445482.html
+93	1990	newyork	2013	1800	150	honda	pcx150	PCX 150 for sale	Astoria	https://newyork.craigslist.org/que/mcy/d/astoria-pcx-150-for-sale/7072751585.html
+1	1999	newyork	N/A	N/A	N/A	lance	cali classic	Lance Cali Classic and Havana 50CC 125cc 200cc Scooters NEW 2020	Island Park	https://newyork.craigslist.org/lgi/mcd/d/island-park-lance-cali-classic-and/7082529622.html
+36	1999	newyork	2015	0	N/A	Kawasaki	KX	2015 Kawasaki KX 65 Single-Cylinder 64 cc	Riverhead	https://newyork.craigslist.org/que/mcd/d/riverhead-2015-kawasaki-kx-65-single/7079685626.html
+255	1999	newjersey	N/A	N/A	N/A	lance	cali classic	Lance Cali Classic and Havana 50CC 125cc 200cc Scooters NEW 2020	Island Park	https://newyork.craigslist.org/lgi/mcd/d/island-park-lance-cali-classic-and/7082529622.html
+100	2000	newyork	2006	1345	125	Yamaha		Yamaha 125cc Black vino Scotter	Harlem / Morningside	https://newyork.craigslist.org/mnh/mcy/d/new-york-yamaha-125cc-black-vino-scotter/7071863138.html
+197	2000	newjersey	2006	33000	150	Vespa	LXV	06' Vespa	N/A	https://newjersey.craigslist.org/mcy/d/leonia-06-vespa/7076545283.html
+24	2000	newyork	2015	7000	155	yamaha	smax	2015 Yamaha Smax	New York	https://newyork.craigslist.org/wch/mcy/d/peekskill-2015-yamaha-smax/7080552433.html
+187	2000	newjersey	2016	0	250	hyosung	aquila	"2016 Aquila GV-250 ""Brand New & IN STOCK"""	FLYKITTY MOTORSPORTS.COM	https://newjersey.craigslist.org/mcd/d/monticello-2016-aquila-gv-250-brand-new/7078899262.html
+88	2000	newyork	N/A	N/A	N/A	suzuki	intruder 800	1993 SUZUKI VS 800 INTRUDER	GREENPOINT	https://newyork.craigslist.org/brk/mcy/d/brooklyn-1993-suzuki-vs-800-intruder/7073299585.html
+232	2000	newjersey	2016	0	250	hyosung	aquila	"2016 Aquila GV-250 ""Brand New & IN STOCK"""	FLYKITTY MOTORSPORTS.COM	https://newjersey.craigslist.org/mcd/d/monticello-2016-aquila-gv-250-brand-new/7068809192.html
+42	2000	newyork	2016	0	250	hyosung	gv250	2016 Aquila GV-250 In stock,NO DEALER FEES, WARRANTY	FLYKITTY MOTORSPORTS.COM	https://newyork.craigslist.org/mnh/mcd/d/monticello-2016-aquila-gv-250-in/7078865478.html
+209	2000	newjersey	N/A	N/A	N/A	Triumph		70 triumph tiger	N/A	https://newjersey.craigslist.org/mcy/d/sussex-70-triumph-tiger/7073545475.html
+245	2000	newjersey	1972	10000	450	honda	cb450	1972 Honda cb450 cafe racer (OBO)	N/A	https://newjersey.craigslist.org/mcy/d/1972-honda-cb450-cafe-racer-obo/7066208413.html
+133	2000	newyork	N/A	N/A	250	Kawasaki	Kx 250	1990 Kawasaki Kx 250	Brooklyn/Long Island	https://newyork.craigslist.org/brk/mcy/d/brooklyn-1990-kawasaki-kx-250/7069193166.html
+134	2000	newyork	2007	14000	150	vespa	lx150	07 Vespa lx	Brooklyn	https://newyork.craigslist.org/brk/mcy/d/brooklyn-07-vespa-lx/7069023559.html
+237	2000	newjersey	1998	12963	750	honda	magna vf750c	1998 Honda Magna VF 750 13000 miles $2000 OBO	Parsippany NJ	https://newjersey.craigslist.org/mcy/d/parsippany-1998-honda-magna-vf-miles/7068503556.html
+57	2000	newyork	2000	17000	800	Suzuki	intruder	Suzuki intruder 800cc	Cliffwood beach	https://newyork.craigslist.org/jsy/mcy/d/keyport-suzuki-intruder-800cc/7078184724.html
+161	2000	newyork	2016	0	250	hyosung	gv250	"2016 Aquila GV-250 ""Brand New & IN STOCK"""	FLYKITTY MOTORSPORTS.COM	https://newyork.craigslist.org/mnh/mcd/d/monticello-2016-aquila-gv-250-brand-new/7063977895.html
+31	2100	newyork	2008	14328	500	suzuki	gs500f	2008 Suzuki GS500F	Queens	https://newyork.craigslist.org/que/mcy/d/forest-hills-2008-suzuki-gs500f/7079972920.html
+195	2100	newjersey	1970	N/A	N/A	xs650	yamaha	1969 cb350 cb450 cl77 cd175 xs650 cl450 cb160 gt250 cl360 cb750 cl350	wilm de. cb175 cb77 cl160 a7 cl175 cb125 w1 650 cb550 cb200	https://newjersey.craigslist.org/mcy/d/1969-cb350-cb450-cl77-cd175-xs650-cl450/7077556778.html
+35	2100	newyork	1969	37310	700	Moto	Guzzi Ambassador v700	Moto guzzi 1969 v700 ambassador	Red Hook	https://newyork.craigslist.org/brk/mcy/d/brooklyn-moto-guzzi-1969-v700-ambassador/7079778321.html
+178	2150	newjersey	N/A	N/A	N/A	harley	davidson	1975 AMF SS175	WEST MILFORD	https://newjersey.craigslist.org/mcy/d/newfoundland-1975-amf-ss175/7080185353.html
+39	2195	newyork	N/A	1	N/A	hyosung	gt250r	2016 Hyosung GT 250R	Staten Island	https://newyork.craigslist.org/stn/mcd/d/staten-island-2016-hyosung-gt-250r/7079260114.html
+233	2200	newjersey	2016	0	250	Hyosung	GT-250R	"2016 Hyosung GT 250R "" BRAND NEW & IN STOCK"""	FLYKITTY MOTORSPORTS.COM	https://newjersey.craigslist.org/mcd/d/monticello-2016-hyosung-gt-250r-brand/7068807459.html
+119	2200	newyork	N/A	N/A	N/A	Honda		1989 Honda Hawk GT NT650	Kent, CT	https://newyork.craigslist.org/mnh/mcy/d/south-kent-1989-honda-hawk-gt-nt650/7069883173.html
+221	2200	newjersey	1974	18000	360	honda	cb360	1974 Honda CB360	Easton, PA	https://newjersey.craigslist.org/mcy/d/easton-1974-honda-cb360/7071046712.html
+188	2200	newjersey	2016	0	250	Hyosung	GT-250R	"2016 Hyosung GT 250R "" BRAND NEW & IN STOCK"""	FLYKITTY MOTORSPORTS.COM	https://newjersey.craigslist.org/mcd/d/monticello-2016-hyosung-gt-250r-brand/7078898480.html
+162	2200	newyork	2016	0	250	hyosung	gt250r	"2016 GT250R ""Brand New & IN STOCK"""	FLYKITTY MOTORSPORTS.COM	https://newyork.craigslist.org/mnh/mcd/d/monticello-2016-gt250r-brand-new-in/7063976067.html
+25	2200	newyork	1981	7850	750	honda	cb750	1981 Honda CB 750	Navy Yard	https://newyork.craigslist.org/brk/mcy/d/brooklyn-1981-honda-cb-750/7080506899.html
+41	2200	newyork	2016	0	250	hyosung	gt250r	"NEW GT-250R 2016 ""IN STOCK, NO DEALER FEES, WARRANTY!"""	FLYKITTY MOTORSPORTS.COM	https://newyork.craigslist.org/mnh/mcd/d/monticello-new-gt-250r-2016-in-stock-no/7078871183.html
+82	2295	newyork	2020	N/A	230	SG250		2020 CSC SG250 SAN GABRIEL MOTORCYCLE	Union Square	https://newyork.craigslist.org/mnh/mcd/d/valyermo-2020-csc-sg250-san-gabriel/7074451700.html
+123	2295	newyork	2020	000	230	CSC	SG250	2020 CSC SG250 SAN GABRIEL CAFE RACER	Union Square	https://newyork.craigslist.org/mnh/mcd/d/valyermo-2020-csc-sg250-san-gabriel/7069778552.html
+50	2299	newyork	2018	0	110	KAWASAKI	KLX 110L	2018 KAWASAKI KLX 110 L AVAILABLE FOR FINANCING !! $0 DOWN !	457 CONEY ISLAND AVENUE	https://newyork.craigslist.org/brk/mcd/d/brooklyn-2018-kawasaki-klx-110/7078559455.html
+241	2299	newjersey	2020	N/A	250	Kawasaki	KX250 KLX140G	2020 Kawasaki® KLX® and KX™ Dirtbikes  ***ZERO DOWN and $29 a month***	Toms River	https://newjersey.craigslist.org/mcd/d/2020-kawasaki-klx-and-kx-dirtbikes-zero/7067103953.html
+59	2299	newyork	2020	N/A	250	Kawasaki	KX250 KX450 KLX140G	2020 Kawasaki® KLX® and KX™ Dirtbikes ***ZERO DOWN and $29 a month***	Toms River	https://newyork.craigslist.org/jsy/mcd/d/island-heights-2020-kawasaki-klx-and-kx/7077613994.html
+108	2299	newyork	2020	N/A	250	Kawasaki	KX250 KX450 KLX140G	2020 Kawasaki® KLX® and KX™ Dirtbikes ***ZERO DOWN and $29 a month***	Toms River	https://newyork.craigslist.org/jsy/mcd/d/island-heights-2020-kawasaki-klx-and-kx/7070819051.html
+223	2299	newjersey	2020	N/A	250	Kawasaki	KX250 KLX140G	2020 Kawasaki® KLX® and KX™ Dirtbikes  ***ZERO DOWN and $29 a month***	Toms River	https://newjersey.craigslist.org/mcd/d/2020-kawasaki-klx-and-kx-dirtbikes-zero/7070819747.html
+49	2299	newyork	2018	0	110	KAWASAKI	KLX 110L	2019 KAWASAKI KLX 110 L AVAILABLE FOR FINANCING !! $0 DOWN !	457 CONEY ISLAND AVENUE	https://newyork.craigslist.org/brk/mcd/d/brooklyn-2019-kawasaki-klx-110/7078559785.html
+194	2299	newjersey	2020	N/A	250	Kawasaki	KX250 KLX140G	2020 Kawasaki® KLX® and KX™ Dirtbikes  ***ZERO DOWN and $29 a month***	Toms River	https://newjersey.craigslist.org/mcd/d/2020-kawasaki-klx-and-kx-dirtbikes-zero/7077612603.html
+147	2299	newyork	2020	N/A	250	Kawasaki	KX250 KX450 KLX140G	2020 Kawasaki® KLX® and KX™ Dirtbikes ***ZERO DOWN and $29 a month***	Toms River	https://newyork.craigslist.org/jsy/mcd/d/island-heights-2020-kawasaki-klx-and-kx/7067105023.html
+231	2299	newjersey	2019	N/A	600	Kawasaki	Yamaha Ninja 400 KX250	Get APPROVED RIGHT NOW on a Kawasaki or Yamaha!!!!!!! **ZERO DOWN**	Toms River	https://newjersey.craigslist.org/mcd/d/get-approved-right-now-on-kawasaki-or/7069507692.html
+186	2299	newjersey	2019	N/A	600	Kawasaki	Yamaha Ninja 400 KX250	Get APPROVED RIGHT NOW on a Kawasaki or Yamaha!!!!!!! **ZERO DOWN**	Toms River	https://newjersey.craigslist.org/mcd/d/get-approved-right-now-on-kawasaki-or/7078961859.html
+211	2299	newjersey	2019	N/A	600	Kawasaki	Yamaha Ninja 400 KX250	Get APPROVED RIGHT NOW on a Kawasaki or Yamaha!!!!!!! **ZERO DOWN**	Toms River	https://newjersey.craigslist.org/mcd/d/get-approved-right-now-on-kawasaki-or/7073287320.html
+244	2299	newjersey	2019	N/A	600	Kawasaki	Yamaha Ninja 400 KX250	Get APPROVED RIGHT NOW on a Kawasaki or Yamaha!!!!!!! **ZERO DOWN**	Toms River	https://newjersey.craigslist.org/mcd/d/get-approved-right-now-on-kawasaki-or/7066462727.html
+130	2300	newyork	2003	20000	600	Yamaha	r6	2003 yamaha r6	N/A	https://newyork.craigslist.org/stn/mcy/d/staten-island-2003-yamaha-r6/7069378845.html
+109	2300	newyork	2009	N/A	250	yamaha	yz250f	Titled NYS Yamaha 250f 2009	Flushing	https://newyork.craigslist.org/que/mcy/d/flushing-titled-nys-yamaha-250f-2009/7070814691.html
+135	2300	newyork	2013	15050	150	honda	pcx150	2013 PCX 150 SCOOTER	Upper East Side	https://newyork.craigslist.org/mnh/mcy/d/new-york-2013-pcx-150-scooter/7068713433.html
+157	2300	newyork	2001	116000	1100	Honda	Blackbird	2001 Honda CBR 1100	Nassau County	https://newyork.craigslist.org/lgi/mcy/d/bellmore-2001-honda-cbr-1100/7065344796.html
+171	2300	newjersey	2018	500	N/A	Apollo	250	2018 Apollo 250 Sportsman	West New York NJ	https://newjersey.craigslist.org/mcy/d/west-new-york-2018-apollo-250-sportsman/7081019887.html
+70	2300	newyork	1997	3700	N/A	Yamaha	Virago 535 cc/97	Selling Yamaha Virago 535 cc/97	Brooklyn	https://newyork.craigslist.org/brk/mcy/d/brooklyn-selling-yamaha-virago-535-cc-97/7076443899.html
+136	2399	newyork	2019	5	N/A	Nanrobot		Electric scooter ls7 nanrobot	Queens ny	https://newyork.craigslist.org/que/mcy/d/elmhurst-electric-scooter-ls7-nanrobot/7068698206.html
+20	2400	newyork	N/A	N/A	150	honda	crf150r	Honda CRF150r	N/A	https://newyork.craigslist.org/wch/mcy/d/putnam-valley-honda-crf150r/7080803458.html
+76	2400	newyork	2007	3400	200	suzuki	dr200se	2007 Suzuki DR200	Bushwick	https://newyork.craigslist.org/brk/mcy/d/brooklyn-2007-suzuki-dr200/7075750517.html
+126	2450	newyork	2014	600	250	honda	rebel 250	2014 Honda rebel 250	Brooklyn	https://newyork.craigslist.org/brk/mcy/d/brooklyn-2014-honda-rebel-250/7069625213.html
+92	2495	newyork	2017	0	N/A	Yamaha	YZ	2017 Yamaha YZ 85	Motorsports Nation Plainfield	https://newyork.craigslist.org/lgi/mcd/d/plainfield-2017-yamaha-yz-85/7072773237.html
+33	2495	newyork	2002	34000	998	yamaha	fz1	2002 YAMAHA FZ1- FAST FAST FAST	Brooklyn NYC	https://newyork.craigslist.org/brk/mcy/d/brooklyn-2002-yamaha-fz1-fast-fast-fast/7079800130.html
+213	2499	newjersey	2013	8300	300	kawasaki	ninja 300 abs	2013 Kawasaki Ninja 300 with ABS, 8,300 mls	Clifton	https://newjersey.craigslist.org/mcy/d/clifton-2013-kawasaki-ninja-300-with/7072605377.html
+117	2499	newyork	2014	10	300	kawasaki	ninja 300	2014 KAWASAKI NINJA	Brooklyn	https://newyork.craigslist.org/brk/mcy/d/brooklyn-2014-kawasaki-ninja/7070177886.html
+184	2499	newjersey	2020	N/A	110	Kawasaki	KLX110L	2020 Kawasaki® KLX®110L  ***Zero down $31 a month***	Toms River	https://newjersey.craigslist.org/mcd/d/island-heights-2020-kawasaki-klx110l/7079561156.html
+175	2500	newjersey	2005	N/A	N/A	Honda	CRF 450X	2005 Honda CRF 450X	N/A	https://newjersey.craigslist.org/mcy/d/mahwah-2005-honda-crf-450x/7080501152.html
+165	2500	newjersey	N/A	7850	750	honda	shadow	2001 Honda Shadow Spirit VT750	N/A	https://newjersey.craigslist.org/mcy/d/landing-2001-honda-shadow-spirit-vt750/7082448727.html
+206	2500	newjersey	2003	N/A	N/A	yamaha	xvs1100	2003 Yamaha V Star 1100cc	Fort Lee	https://newjersey.craigslist.org/mcy/d/fort-lee-2003-yamaha-star-1100cc/7074135093.html
+168	2500	newjersey	1984	63365	1100	84’Honda	VF1100S Saber	84’ Honda VF1100S Saber	Bayville	https://newjersey.craigslist.org/mcy/d/ocean-gate-84-honda-vf1100s-saber/7081502638.html
+198	2500	newjersey	2008	N/A	250	kawasaki	kx250	2008 Kawasaki Kx 250 dirt bike	07840	https://newjersey.craigslist.org/mcy/d/hackettstown-2008-kawasaki-kx-250-dirt/7076536090.html
+32	2500	newyork	2005	14500	620	ducati	monster	2005 Ducati Monster 620	Fort Green	https://newyork.craigslist.org/brk/mcy/d/brooklyn-2005-ducati-monster-620/7079936317.html
+73	2500	newyork	2009	N/A	N/A	yamaha	yz450f	Yz450f	Selden	https://newyork.craigslist.org/lgi/mcy/d/selden-yz450f/7076032658.html
+228	2500	newjersey	2002	3144	650	yamaha	vstar 650	2002 Yamaha V Star 650	POMPTON PLAINS	https://newjersey.craigslist.org/mcy/d/pompton-plains-2002-yamaha-star-650/7069615956.html
+21	2500	newyork	N/A	N/A	250	Piaggio	MP3 250i	2008 Piaggio MP3 250i	N/A	https://newyork.craigslist.org/brk/mcy/d/brooklyn-2008-piaggio-mp3-250i/7080754630.html
+201	2500	newjersey	1999	19000	600	honda	cbr600f4	1999 Honda CBR600F4	Bloomfield	https://newjersey.craigslist.org/mcy/d/bloomfield-1999-honda-cbr600f4/7075590725.html
+60	2500	newyork	2002	8800	1100	Honda	Shadow saber 1100	2002 HONDA SHADOW SABRE 1100	Mahopac	https://newyork.craigslist.org/wch/mcy/d/croton-falls-2002-honda-shadow-sabre/7077548981.html
+270	2600	newjersey	2014	N/A	150	KTM	150SX	2014 KTM 150SX	Pemberton	https://cnj.craigslist.org/mcy/d/browns-mills-2014-ktm-150sx/7081373242.html
+129	2600	newyork	N/A	N/A	N/A	suzuki	boulevard	800cc Suziki Boulevard	Bronx	https://newyork.craigslist.org/brx/mcy/d/bronx-800cc-suziki-boulevard/7069502012.html
+112	2600	newyork	N/A	N/A	N/A	honda	goldwing	1976 Honda Gold Wing	bronx	https://newyork.craigslist.org/wch/mcy/d/bronx-1976-honda-gold-wing/7070536226.html
+204	2600	newjersey	2007	N/A	N/A	suzuki		2007 Suzuki motorcycle bobber	North Haledon	https://newjersey.craigslist.org/mcy/d/haledon-2007-suzuki-motorcycle-bobber/7074613316.html
+53	2699	newyork	2019	N/A	N/A	KAWASAKI	Z-125	2019 KAWASAKI Z-125 PRO	Brookyln	https://newyork.craigslist.org/brk/mcd/d/brooklyn-2019-kawasaki-125-pro/7078557689.html
+10	2700	newyork	2015	N/A	N/A	2015	kx 100	KX 100	N/A	https://newyork.craigslist.org/lgi/mcy/d/sag-harbor-kx-100/7081837593.html
+219	2700	newjersey	N/A	N/A	N/A	kawasaki	vulcan 900	Kawasaki, Cruiser , Motorcycle	N/A	https://newjersey.craigslist.org/mcy/d/blairstown-kawasaki-cruiser-motorcycle/7071688594.html
+90	2700	newyork	2019	1500	155	yamaha	smax	2019 Yamaha Smax *MINT*	Bronx	https://newyork.craigslist.org/brx/mcy/d/bronx-2019-yamaha-smax-mint/7073181592.html
+264	2700	newjersey	2015	N/A	N/A	2015	kx 100	KX 100	N/A	https://newyork.craigslist.org/lgi/mcy/d/sag-harbor-kx-100/7081837593.html
+276	2750	newjersey	2009	N/A	N/A	Suzuki	TU250x	2009 Suzuki TU250x - Low Miles	Poughkeepsie	https://hudsonvalley.craigslist.org/mcy/d/poughkeepsie-2009-suzuki-tu250x-low/7081823732.html
+234	2800	newjersey	2017	0	250	hyosung	gd250r	"2017 Hyosung GD-250R "" BRAND NEW & IN STOCK"""	FLYKITTY MOTORSPORTS.COM	https://newjersey.craigslist.org/mcd/d/monticello-2017-hyosung-gd-250r-brand/7068806793.html
+189	2800	newjersey	2017	0	250	hyosung	gd250r	"2017 Hyosung GD-250R "" BRAND NEW & IN STOCK"""	FLYKITTY MOTORSPORTS.COM	https://newjersey.craigslist.org/mcd/d/monticello-2017-hyosung-gd-250r-brand/7078897692.html
+153	2800	newyork	ktm	123456	N/A	85	sx	2015 KTM 85cc	Queens Village	https://newyork.craigslist.org/lgi/mcy/d/queens-village-2015-ktm-85cc/7065669453.html
+163	2800	newyork	2017	0	250	hyosung	gd250r	"2017 Hyosung GD-250R  ""BRAND NEW & IN STOCK"""	FLYKITTY MOTORSPORTS.COM	https://newyork.craigslist.org/mnh/mcd/d/monticello-2017-hyosung-gd-250r-brand/7063973896.html
+40	2800	newyork	2017	0	250	hyosung	gd250r	"2017 Hyosung GD-250R  ""BRAND NEW & IN STOCK"""	FLYKITTY MOTORSPORTS.COM	https://newyork.craigslist.org/mnh/mcd/d/monticello-2017-hyosung-gd-250r-brand/7078871836.html
+72	2800	newyork	2004	34000	N/A	harley	davidson sportster	04 Harley Davidson 883/Trades	Maspeth queens	https://newyork.craigslist.org/que/mcy/d/maspeth-04-harley-davidson-883-trades/7076321222.html
+67	2800	newyork	1977	41000	750	Suzuki	GS750	1977 Suzuki GS750	N/A	https://newyork.craigslist.org/que/mcy/d/flushing-1977-suzuki-gs750/7077030896.html
+151	2800	newyork	N/A	N/A	N/A	yamaha		Yamaha XS1100	Mahopac ny	https://newyork.craigslist.org/wch/mcy/d/mahopac-yamaha-xs1100/7066288415.html
+173	2850	newjersey	2008	16000	800	Suzuki	Boulevard C50	Suzuki Boulevard 2008	N/A	https://newjersey.craigslist.org/mcy/d/lincoln-park-suzuki-boulevard-2008/7080689919.html
+252	2900	newjersey	ktm	N/A	N/A	65	sx	Ktm65sx	N/A	https://newjersey.craigslist.org/mcy/d/newton-ktm65sx/7064299135.html
+164	2900	newjersey	2015	N/A	N/A	honda	cbr300r abs	2015 Honda CBR300R ABS 1900mi only	East Rutherford	https://newjersey.craigslist.org/mcy/d/rutherford-2015-honda-cbr300r-abs/7082483857.html
+196	2900	newjersey	N/A	N/A	N/A	Suzuki	RMX250	1989 Suzuki RMX 250 2stroke	N/A	https://newjersey.craigslist.org/mcy/d/newark-1989-suzuki-rmx-250-2stroke/7076691909.html
+104	2900	newyork	2008	2430	500	Aprilia	Scarabeo 500	2008 Aprilia Scarabeo 500 Low mileage Like new	Sheepshead Bay	https://newyork.craigslist.org/brk/mcy/d/brooklyn-2008-aprilia-scarabeo-500-low/7071444440.html
+113	2900	newyork	1971	N/A	N/A	HONDA	CB	1971 HONDA CB 500	bronx	https://newyork.craigslist.org/wch/mcy/d/bronx-1971-honda-cb-500/7070535212.html
+236	2950	newjersey	2015	984	650	boulevard		2015 Suzuki S40 Boulervard 650	FLYKITTY MOTORSPORTS.COM	https://newjersey.craigslist.org/mcd/d/monticello-2015-suzuki-s40-boulervard/7068802110.html
+114	2995	newyork	1973	N/A	N/A	HONDA	CB	1973 HONDA CB 350	bronx	https://newyork.craigslist.org/wch/mcy/d/bronx-1973-honda-cb-350/7070532561.html
+66	2998	newyork	2018	0	N/A	KTM	SX	2018 KTM 65 SX *SALE!*	Motorsports Nation Plainfield	https://newyork.craigslist.org/lgi/mcd/d/plainfield-2018-ktm-65-sx-sale/7077102204.html
+80	2999	newyork	N/A	13062	N/A	suzuki	intruder 800	2002 Suzuki Intruder 800	Wilkins Motorsports	https://newyork.craigslist.org/wch/mcd/d/brewster-2002-suzuki-intruder-800/7074726542.html
+91	2999	newyork	2013	910	650	kawasaki	ninja 650	2013 Kawasaki Ninja 650	New York	https://newyork.craigslist.org/fct/mcy/d/long-island-city-2013-kawasaki-ninja-650/7073090993.html
+247	2999	newjersey	N/A	N/A	N/A	Kawasaki	Z650	2019 Kawasaki® Z™ LINEUP ***Zero down $41 a month***	Toms River	https://newjersey.craigslist.org/mcd/d/island-heights-2019-kawasaki-lineup/7065178881.html
+193	2999	newjersey	N/A	N/A	N/A	Kawasaki	Z650	2019 Kawasaki® Z™ LINEUP ***Zero down $41 a month***	Toms River	https://newjersey.craigslist.org/mcd/d/island-heights-2019-kawasaki-lineup/7077628525.html
+185	3000	newjersey	N/A	N/A	N/A	kawasaki	ninja	2013 Kawasaki Ninja 300	N/A	https://newjersey.craigslist.org/mcy/d/nutley-2013-kawasaki-ninja-300/7079315552.html
+218	3000	newjersey	2006	3500	650	suzuki	boulevard s40	2006 Suzuki Boulevard S40 - ONLY 3500 MILES!!	Pine Brook	https://newjersey.craigslist.org/mcy/d/pine-brook-2006-suzuki-boulevard-s40/7071895083.html
+216	3000	newjersey	1995	27000	1100	suzuki	gsxr	GSXR	north jersey	https://newjersey.craigslist.org/mcy/d/west-milford-gsxr/7072092362.html
+239	3000	newjersey	N/A	N/A	N/A	kawasaki	ninja 300	2013 Kawasaki Ninja 300	N/A	https://newjersey.craigslist.org/mcy/d/nutley-2013-kawasaki-ninja-300/7068034122.html
+251	3000	newjersey	2003	26600	1200	suzuki	bandit 1200	2003 Suzuki Bandit	Parsippany	https://newjersey.craigslist.org/mcy/d/parsippany-2003-suzuki-bandit/7064911032.html
+191	3000	newjersey	1999	6600	1200	harley	davidson sportster 1200	1999 Harley Davidson Sportster 1200	Lincoln Park	https://newjersey.craigslist.org/mcy/d/lincoln-park-1999-harley-davidson/7077860021.html
+224	3000	newjersey	2001	5200	929	honda	cbr 929rr	929rr	N/A	https://newjersey.craigslist.org/mcy/d/lodi-929rr/7070611006.html
+283	3000	newjersey	2006	4295	650	YAMAHAVSTAR650		YAMAHA VSTAR 650	EAST STROUDSBURG,PA	https://poconos.craigslist.org/mcy/d/bartonsville-yamaha-vstar-650/7081623653.html
+45	3000	newyork	N/A	N/A	N/A	kawasaki	ninja 300	NINJA 300 **very well maintained**	Holbrook	https://newyork.craigslist.org/lgi/mcy/d/holbrook-ninja-300-very-well-maintained/7078670512.html
+156	3000	newyork	1980	25375	750	honda	cb750k	Honda CB 750K 1980 - $3000 - 25375 miles	Woodside	https://newyork.craigslist.org/que/mcy/d/sunnyside-honda-cb-750k-miles/7065432664.html
+23	3000	newyork	2019	275	100	CSC	Cityslicker	2019 CSC City Slicker Electric Motorcycle $1?	Corona	https://newyork.craigslist.org/que/mcy/d/corona-2019-csc-city-slicker-electric/7080647910.html
+63	3000	newyork	1994	N/A	N/A	Honda	ct70	1994 ct70	Little Neck	https://newyork.craigslist.org/lgi/mcy/d/little-neck-1994-ct70/7077274157.html
+81	3000	newyork	2005	N/A	650	suzuki	v-strom 650	2005 Suzuki V-strom 650	Bensonhurst	https://newyork.craigslist.org/brk/mcy/d/brooklyn-2005-suzuki-strom-650/7074474423.html
+83	3000	newyork	2005	12300	800	suzuki	boulevard	2005 Suzuki M50 Boulevard	Queens	https://newyork.craigslist.org/brk/mcy/d/far-rockaway-2005-suzuki-m50-boulevard/7074278915.html
+19	3000	newyork	2008	18000	600	kawasaki	ninja zx-6r	08 zx6r	Belle rose, queens, ny	https://newyork.craigslist.org/que/mcy/d/glen-oaks-08-zx6r/7080954941.html
+97	3000	newyork	2014	N/A	N/A	honda	crf450r	2014 Crf450	N/A	https://newyork.craigslist.org/jsy/mcy/d/northvale-2014-crf450/7072320479.html
+127	3000	newyork	2018	1000	135	benelli	tnt 135	2018 Benneli  TNT 135	Jamaica New York	https://newyork.craigslist.org/que/mcy/d/jamaica-2018-benneli-tnt-135/7069523418.html
+140	3000	newyork	2019	350	150	honda	pcx 150	2019 Honda PCX 150	Staten Island	https://newyork.craigslist.org/stn/mcy/d/staten-island-2019-honda-pcx-150/7068499057.html
+101	3000	newyork	2015	7406	N/A	Honda		2015 Honda 150cc	Bronx	https://newyork.craigslist.org/brx/mcy/d/bronx-2015-honda-150cc/7071842242.html
+122	3100	newyork	2017	N/A	N/A	kawasaki		Kawasaki Kx85 Kx 85 2017 Pro Circuit	montauk	https://newyork.craigslist.org/lgi/mcy/d/montauk-kawasaki-kx85-kx-pro-circuit/7069825126.html
+250	3200	newjersey	1986	5263	N/A	1986	Sportster	HARLEY Davidson	Passaic County	https://newjersey.craigslist.org/mcy/d/hawthorne-harley-davidson/7064972226.html
+94	3200	newyork	2007	N/A	650	2007	suzuki 650 SV s	2007 Suzuki 650SV s	BROOKLYN	https://newyork.craigslist.org/brk/mcy/d/brooklyn-2007-suzuki-650sv/7072738003.html
+268	3200	newjersey	2009	N/A	250	yamaha	yz250f	2009 YZ 250F	Malvern	https://cnj.craigslist.org/mcy/d/malvern-2009-yz-250f/7082300358.html
+282	3200	newjersey	2003	2100	883	Harley	Sportster	2003 Harley-Davidson SPORTSTER 883	Oyster Bay	https://longisland.craigslist.org/mcy/d/oyster-bay-2003-harley-davidson/7081236276.html
+183	3200	newjersey	1977	N/A	650	kawasaki	kz650	1977 Kawasaki KZ 650	Montville	https://newjersey.craigslist.org/mcy/d/towaco-1977-kawasaki-kz-650/7079645159.html
+225	3200	newjersey	N/A	N/A	750	honda	cb 750	Old school Chopper Honda CB 750 Bobber	Montvale	https://newjersey.craigslist.org/mcy/d/montvale-old-school-chopper-honda-cb/7070595407.html
+266	3250	newjersey	2013	N/A	500	honda	cbr500r	Honda 14 CBR650F, 13 CBR500R, 17 CMX Rebel 500 & 300 2017  and more	Ozone Park	https://newyork.craigslist.org/que/mcy/d/ozone-park-honda-14-cbr650f-13-cbr500r/7081315039.html
+46	3250	newyork	2001	N/A	1100	bmw	r1100r	BMW R1100RL	Harlem / Morningside	https://newyork.craigslist.org/mnh/mcy/d/new-york-bmw-r1100rl/7078568620.html
+12	3250	newyork	2013	N/A	500	honda	cbr500r	Honda 14 CBR650F, 13 CBR500R, 17 CMX Rebel 500 & 300 2017  and more	Ozone Park	https://newyork.craigslist.org/que/mcy/d/ozone-park-honda-14-cbr650f-13-cbr500r/7081315039.html
+214	3300	newjersey	1996	20	800	kawasaki	vulcan	1996 Kawasaki Vulcan 800 Bobber	Jersey City	https://newjersey.craigslist.org/mcy/d/jersey-city-1996-kawasaki-vulcan-800/7072142414.html
+278	3300	newjersey	N/A	N/A	N/A	honda	cbr600rr	2003 Honda cbr 600rr	Poughkeepsie	https://hudsonvalley.craigslist.org/mcy/d/poughkeepsie-2003-honda-cbr-600rr/7081782238.html
+230	3300	newjersey	2004	N/A	N/A	2004	Suzuki vz800	2004 Suzuki vz800 maurader	Franklin lakes	https://newjersey.craigslist.org/mcy/d/franklin-lakes-2004-suzuki-vz800/7069531569.html
+139	3400	newyork	2016	5800	300	kawasaki	ninja 300	2016 Kawasaki Ninja 300 with 5800 miles, one owner, great bike.	AUTOFORWARDINC.COM	https://newyork.craigslist.org/brk/mcd/d/brooklyn-2016-kawasaki-ninja-300-with/7068682718.html
+11	3400	newyork	2017	3100	300	yamaha	yzf-r3	2017 Yamaha R3 3k miles & 2015 Yamaha bolt XVS 950	Ozone park	https://newyork.craigslist.org/que/mcy/d/ozone-park-2017-yamaha-r3-3k-miles/7081317363.html
+265	3400	newjersey	2017	3100	300	yamaha	yzf-r3	2017 Yamaha R3 3k miles & 2015 Yamaha bolt XVS 950	Ozone park	https://newyork.craigslist.org/que/mcy/d/ozone-park-2017-yamaha-r3-3k-miles/7081317363.html
+148	3400	newyork	N/A	N/A	N/A	Yamaha	yfz450	2008 YAMAHA YFZ450	Lindenhurst	https://newyork.craigslist.org/lgi/mcy/d/lindenhurst-2008-yamaha-yfz450/7066597916.html
+220	3400	newjersey	2007	2341	42	polaris	sportsman 450	Polaris sportsman 450	Rockaway nj	https://newjersey.craigslist.org/mcy/d/tranquility-polaris-sportsman-450/7071373081.html
+240	3450	newjersey	2004	N/A	1300	honda	vtx1300	Honda VTX 1300	Berkeley Heights	https://newjersey.craigslist.org/mcy/d/berkeley-heights-honda-vtx-1300/7067409044.html
+65	3450	newyork	1970	12000	750	honda	cb750	1969 HONDA FOUR CYLINDER 750 COLLECTABLE  RARE CAFE	staten island	https://newyork.craigslist.org/stn/mcy/d/staten-island-1969-honda-four-cylinder/7077209561.html
+110	3450	newyork	YAMA	N/A	N/A	N/A		2013 Yamaha V-Star 650 ** WE FINANCE**	Wilkins Motorsports	https://newyork.craigslist.org/wch/mcd/d/patterson-2013-yamaha-star-650-we/7070745496.html
+47	3457	newyork	2015	6885	300	honda	cb300f	2015 Honda CB300F	bklyn	https://newyork.craigslist.org/brk/mcd/d/brooklyn-2015-honda-cb300f/7078566360.html
+37	3499	newyork	2002	24288	N/A	Honda	VTX 1800R	2002 Honda VTX 1800R  -Finance it with Instant Credit Approval!	Delivered to your Doorstep starting at $189	https://newyork.craigslist.org/mnh/mcd/d/las-vegas-2002-honda-vtx-1800r-finance/7079557417.html
+48	3499	newyork	2009	2600	N/A	SUZUKI		2009 Suzuki boulevard S40	Brookyln	https://newyork.craigslist.org/brk/mcd/d/brooklyn-2009-suzuki-boulevard-s40/7078562443.html
+86	3499	newyork	2015	1279	500	honda	cb500f	2015 Honda CB500F	New York	https://newyork.craigslist.org/fct/mcy/d/long-island-city-2015-honda-cb500f/7073720457.html
+202	3500	newjersey	2005	N/A	1500	vulcan	1500	volcan 1500mo 2005	passaic nj	https://newjersey.craigslist.org/mcy/d/passaic-volcan-1500mo-2005/7075038909.html
+68	3500	newyork	N/A	N/A	N/A	ducati	monster 620	2006 Ducati Monster 620 Dark	Staten Island	https://newyork.craigslist.org/stn/mcy/d/staten-island-2006-ducati-monster-620/7076642837.html
+172	3500	newjersey	2019	1	N/A	GPX	FSE 250E	2019 GPX FSE 250E Brand New	Highland Lakes	https://newjersey.craigslist.org/mcy/d/highland-lakes-2019-gpx-fse-250e-brand/7080901930.html
+155	3500	newyork	1986	N/A	N/A	harley	davidson sportster	1986	Hicksville	https://newyork.craigslist.org/lgi/mcy/d/hicksville-1986/7065529095.html
+5	3500	newyork	1982	N/A	N/A	Yamaha	XV920R	1982 Yamaha XV920R	Mount Vernon	https://newyork.craigslist.org/wch/mcy/d/mount-vernon-1982-yamaha-xv920r/7082418385.html
+217	3500	newjersey	2019	1	N/A	GPX	FSE 250E	2019 GPX FSE 250E Brand New	Highland Lakes	https://newjersey.craigslist.org/mcy/d/highland-lakes-2019-gpx-fse-250e-brand/7071988429.html
+242	3500	newjersey	2017	917	300	kawasaki	ninja 300 abs	2017 Kawasaki Ninja 300 ABS	FLYKITTY MOTORSPORTS.COM	https://newjersey.craigslist.org/mcd/d/monticello-2017-kawasaki-ninja-300-abs/7067096769.html
+103	3500	newyork	2015	200	N/A	yamaha	r3	2015 Yamaha R3	N/A	https://newyork.craigslist.org/stn/mcy/d/staten-island-2015-yamaha-r3/7071474888.html
+215	3500	newjersey	2001	9000	1100	Yamaha		2001 Yamaha Vstar	N/A	https://newjersey.craigslist.org/mcy/d/west-milford-2001-yamaha-vstar/7072103789.html
+96	3500	newyork	2016	N/A	N/A	Quantum		Quantum Wheelchair for  Sale 2016	Gramercy	https://newyork.craigslist.org/mnh/mcy/d/new-york-quantum-wheelchair-for-sale/7072327754.html
+259	3500	newjersey	1982	N/A	N/A	Yamaha	XV920R	1982 Yamaha XV920R	Mount Vernon	https://newyork.craigslist.org/wch/mcy/d/mount-vernon-1982-yamaha-xv920r/7082418385.html
+243	3595	newjersey	N/A	N/A	N/A	Harley	Davidson	1979 Harley Sportster 1000 iron head   please read   Description	Upper Montclair NJ	https://newjersey.craigslist.org/mcy/d/montclair-1979-harley-sportster-1000/7067001693.html
+131	3600	newyork	2012	7000	N/A	vespa		2012 Vespa GTV 300	brooklyn	https://newyork.craigslist.org/brk/mcy/d/brooklyn-2012-vespa-gtv-300/7069353765.html
+149	3600	newyork	2007	54000	1170	BMW	R1200R	BMW R1200R 2007	Pound Ridge	https://newyork.craigslist.org/wch/mcy/d/pound-ridge-bmw-r1200r-2007/7066524609.html
+150	3600	newyork	1989	N/A	N/A	yamaha	ysr 50	1989 Yamaha Ysr50 / Ysr 50	N/A	https://newyork.craigslist.org/lgi/mcy/d/north-arlington-1989-yamaha-ysr50-ysr-50/7066423277.html
+200	3600	newjersey	1983	N/A	1000	Honda	CB 1000	1983 HONDA CB 1000	LYNDHURST	https://newjersey.craigslist.org/mcy/d/rutherford-1983-honda-cb-1000/7075723591.html
+272	3600	newjersey	2007	5798	883	harley	davidson xl883c	Harley Davidson Sportster 883	Bayville	https://jerseyshore.craigslist.org/mcy/d/ocean-gate-harley-davidson-sportster-883/7081552068.html
+141	3600	newyork	2009	N/A	805	Suzuki	Boulevard	Suzuki Boulevard M50 Special Edition	N/A	https://newyork.craigslist.org/wch/mcy/d/putnam-valley-suzuki-boulevard-m50/7068488178.html
+95	3650	newyork	2008	14900	1125	Buell	1125R	Buell 1125R	Eastchester	https://newyork.craigslist.org/wch/mcy/d/eastchester-buell-1125r/7072328958.html
+281	3695	newjersey	2018	0	N/A	Yamaha	YZ	2018 Yamaha YZ 65 *SALE!*	Motorsports Nation Waterford	https://longisland.craigslist.org/mcd/d/waterford-2018-yamaha-yz-65-sale/7082270062.html
+18	3699	newyork	2006	33242	1000	suzuki	gsxr 1000	2006 Suzuki GSX-R 1000cc	JEFFERSON VLY	https://newyork.craigslist.org/wch/mcy/d/jefferson-valley-2006-suzuki-gsx-1000cc/7080976871.html
+277	3700	newjersey	2009	N/A	N/A	vespa		2009 vespa 150s	Mahopac	https://hudsonvalley.craigslist.org/mcy/d/mahopac-2009-vespa-150s/7081805934.html
+74	3700	newyork	2004	34000	1200	harley	davidson sportster	2004 Harley Davidson XL1200C  516 369 8261	New Hyde Park	https://newyork.craigslist.org/lgi/mcy/d/new-hyde-park-2004-harley-davidson/7075934403.html
+52	3749	newyork	2020	0	85	KAWASAKI	KX 85	2020 KAWASAKI KX 85 FINANCING AVAILABLE FOR $0 DOWN	457 CONEY ISLAND AVENUE	https://newyork.craigslist.org/brk/mcd/d/brooklyn-2020-kawasaki-kx-85-financing/7078558103.html
+160	3750	newyork	2006	7000	903	Kawasaki	Vulcan	2006 KAWASAKI VULCAN 900 CLASSIC LT	Bay Ridge	https://newyork.craigslist.org/brk/mcy/d/brooklyn-2006-kawasaki-vulcan-900/7064589787.html
+51	3799	newyork	2018	0	321	YAMAHA	YZF R-3	2018 YAMAHA R-3 FINANCING AVAILABLE NO MONEY DOWN	457 CONEY ISLAND AVENUE	https://newyork.craigslist.org/brk/mcd/d/brooklyn-2018-yamaha-3-financing/7078558955.html
+78	3800	newyork	2016	9600	300	kawasaki	ninja 300	Ninja 300 for sale	Queens	https://newyork.craigslist.org/que/mcy/d/rosedale-ninja-300-for-sale/7075197318.html
+118	3800	newyork	2007	7000	1000	ducati	multistrada 1000ds	2007 Ducati Multistrada 1000DS	Long Island City	https://newyork.craigslist.org/que/mcy/d/long-island-city-2007-ducati/7069927069.html
+38	3800	newyork	1977	N/A	750	Triumph	Bonneville	1977 Triumph Bonneville	East Village	https://newyork.craigslist.org/mnh/mcy/d/new-york-1977-triumph-bonneville/7079491832.html
+271	3800	newjersey	2001	18000	1200	harley	davidson	01 harley sportster xlc 1200	Jackson	https://jerseyshore.craigslist.org/mcy/d/jackson-01-harley-sportster-xlc-1200/7081825134.html
+238	3800	newjersey	1976	N/A	750	bmw	r75/6	1975 BMW R75/6	Branchburg	https://newjersey.craigslist.org/mcy/d/somerville-1975-bmw-r75-6/7068212173.html
+269	3800	newjersey	2007	14000	N/A	kawasaki	ninja zx6r	2007 Kawasaki zx6r	Hillside NJ	https://cnj.craigslist.org/mcy/d/newark-2007-kawasaki-zx6r/7081860086.html
+275	3800	newjersey	N/A	N/A	N/A	yamaha	vstar 950	2009 Yamaha Vstar 950 sell/trade for golfcart	T/O Newburgh	https://hudsonvalley.craigslist.org/mcy/d/newburgh-2009-yamaha-vstar-950-sell/7082412546.html
+154	3850	newyork	N/A	100	N/A	ninja	300	2017 Kawasaki Ninja 300 - SHOWROOM MINT  100 MILES!!!	Wilkins Motorsports	https://newyork.craigslist.org/wch/mcd/d/brewster-2017-kawasaki-ninja-showroom/7065641064.html
+7	3898	newyork	2017	365	N/A	KTM	RC 390 ABS	2017 KTM RC 390 ABS	Motorsports Nation Plainfield	https://newyork.craigslist.org/lgi/mcd/d/plainfield-2017-ktm-rc-390-abs/7081997555.html
+261	3898	newjersey	2017	365	N/A	KTM	RC 390 ABS	2017 KTM RC 390 ABS	Motorsports Nation Plainfield	https://newyork.craigslist.org/lgi/mcd/d/plainfield-2017-ktm-rc-390-abs/7081997555.html
+61	3900	newyork	2004	43000	N/A	2004	Harley Davidson Sporster	2004 HARLEY DAVIDSON SPORSTER XL1200R	WESTCHESTER N Y	https://newyork.craigslist.org/wch/mcy/d/ossining-2004-harley-davidson-sporster/7077443746.html
+274	3900	newjersey	N/A	23200	N/A	Ducati	CR	1995 Ducati 900 SS CR	N/A	https://hudsonvalley.craigslist.org/mcy/d/tuxedo-park-1995-ducati-900-ss-cr/7082483633.html
+87	3900	newyork	N/A	N/A	N/A	honda	cb300f	Honda CB300F great condition	N/A	https://newyork.craigslist.org/jsy/mcy/d/bronx-honda-cb300f-great-condition/7073458176.html
+138	3900	newyork	2010	4900	900	kawasaki	vulcan	2010 Kawasaki Vulcan Custom 900 with 4909 miles	N/A	https://newyork.craigslist.org/brk/mcd/d/brooklyn-2010-kawasaki-vulcan-custom/7068693715.html
+248	3900	newjersey	N/A	1300	N/A	kawasaki	ninja 300 abs se	Ninja 300 2016	N/A	https://newjersey.craigslist.org/mcy/d/wayne-ninja/7064995120.html
+249	3900	newjersey	N/A	1300	N/A	kawasaki	ninja 300 abs se	Ninja Kawasaki 2016 300 abs	N/A	https://newjersey.craigslist.org/mcy/d/wayne-ninja-kawasaki-abs/7064993456.html
+258	3950	newjersey	2012	9800	670	honda	nc700x	Honda NC700X + Extras	Maspeth, NY	https://newyork.craigslist.org/que/mcy/d/maspeth-honda-nc700x-extras/7082423007.html
+43	3950	newyork	N/A	7392	N/A	harley	davidson 883 sportster	2007 Harley Davidson Sportster 883                      ***WE FINANCE	Wilkins Motorsports	https://newyork.craigslist.org/wch/mcd/d/brewster-2007-harley-davidson-sportster/7078740626.html
+125	3950	newyork	2010	5000	900	kawasaki	vulcan 900 custom	2010 Kawasaki Vulcan custom 900	Brooklyn	https://newyork.craigslist.org/brk/mcy/d/brooklyn-2010-kawasaki-vulcan-custom-900/7069627327.html
+208	3950	newjersey	1961	1500	150	Lambretta	150	Lambretta Scooter 150	N/A	https://newjersey.craigslist.org/mcy/d/northvale-lambretta-scooter-150/7073735890.html
+4	3950	newyork	2012	9800	670	honda	nc700x	Honda NC700X + Extras	Maspeth, NY	https://newyork.craigslist.org/que/mcy/d/maspeth-honda-nc700x-extras/7082423007.html
+145	3950	newyork	1994	22000	650	ural	tourist	Ural Tourist	Tarrytown	https://newyork.craigslist.org/wch/mcy/d/tarrytown-ural-tourist/7067823051.html
+205	3955	newjersey	2013	3566	645	suzuki	sv650	2013 Suzuki SFV650 Gladius	Wharton	https://newjersey.craigslist.org/mcy/d/wharton-2013-suzuki-sfv650-gladius/7074197541.html
+29	3990	newyork	2009	3500	500	yamaha		Tmax 500 2009 Blue	New Jersey	https://newyork.craigslist.org/brx/mcy/d/new-york-tmax-blue/7080392588.html
+28	3990	newyork	2009	3500	500	Yamaha	Tmax	Tmax	East Brunswick	https://newyork.craigslist.org/jsy/mcy/d/east-brunswick-tmax/7080430881.html
+77	3999	newyork	2015	0	N/A	Honda	CRF	2015 Honda CRF 450R	Motorsports Nation Plainfield	https://newyork.craigslist.org/lgi/mcd/d/plainfield-2015-honda-crf-450r/7075470869.html
+227	3999	newjersey	2019	0	600	Kawasaki	Ninja 400 ZX10R ZX6R	2019 Kawasaki® Ninja® Supersport Motorcycles **Zero Down $52 a month**	Toms River	https://newjersey.craigslist.org/mcd/d/island-heights-2019-kawasaki-ninja/7070186248.html
+176	3999	newjersey	2006	12333	1000	suzuki	vstrom dl1000	2006 Suzuki VStrom DL 1000	Sussex County	https://newjersey.craigslist.org/mcy/d/andover-2006-suzuki-vstrom-dl-1000/7080294665.html
+177	3999	newjersey	2019	0	600	Kawasaki	Ninja 400 ZX10R ZX6R	2019 Kawasaki® Ninja® Supersport Motorcycles **Zero Down $52 a month**	Toms River	https://newjersey.craigslist.org/mcd/d/island-heights-2019-kawasaki-ninja/7080231903.html
+246	3999	newjersey	2019	0	600	Kawasaki	Ninja 400 ZX10R ZX6R	2019 Kawasaki® Ninja® Supersport Motorcycles **Zero Down $52 a month**	Toms River	https://newjersey.craigslist.org/mcd/d/island-heights-2019-kawasaki-ninja/7065853272.html
+192	3999	newjersey	2009	10625	N/A	suzuki	drz400s	2009 SUZUKI DRZ400S	Nesquehoning	https://newjersey.craigslist.org/mcd/d/nesquehoning-2009-suzuki-drz400s/7077792142.html
+207	3999	newjersey	2019	0	600	Kawasaki	Ninja 400 ZX10R ZX6R	2019 Kawasaki® Ninja® Supersport Motorcycles **Zero Down $52 a month**	Toms River	https://newjersey.craigslist.org/mcd/d/island-heights-2019-kawasaki-ninja/7073934561.html
+182	3999	newjersey	1981	N/A	N/A	yamaha	xs650	Custom 1981 Yamaha XS650 / Harley Bobber	wayne	https://newjersey.craigslist.org/mcy/d/wayne-custom-1981-yamaha-xs650-harley/7079781567.html
+71	4000	newyork	2006	3000	1200	harley	davidson sportster	2006 xl1200c low miles	Sunset park	https://newyork.craigslist.org/brk/mcy/d/brooklyn-2006-xl1200c-low-miles/7076441496.html
+166	4000	newjersey	N/A	N/A	N/A	harley	davidson electraglide	81 shovel head	Hardwick	https://newjersey.craigslist.org/mcy/d/blairstown-81-shovel-head/7082404547.html
+79	4000	newyork	2009	14000	N/A	Honda	Shadow 750	2009 Honda Shadow 750	Bridgeport	https://newyork.craigslist.org/fct/mcy/d/bridgeport-2009-honda-shadow-750/7074743998.html
+56	4000	newyork	2007	11000	1200	harley	davidson sportster 1200	Harley Davidson sportster	Bronx	https://newyork.craigslist.org/brx/mcy/d/bronx-harley-davidson-sportster/7078303043.html
+85	4000	newyork	2008	N/A	400	suzuki	drz400sm	Suzuki DRZ400SM 2008	Hauppauge	https://newyork.craigslist.org/lgi/mcy/d/hauppauge-suzuki-drz400sm-2008/7073746258.html
+144	4000	newyork	2014	14300	650	kawasaki	ninja 650R abs	2014 Kawasaki ninja 650r abs	Bx	https://newyork.craigslist.org/brx/mcy/d/bronx-2014-kawasaki-ninja-650r-abs/7067825625.html
+143	4000	newyork	2005	6600	1200	Harley	Davidson Sportster	2005 Harley Davidson Sportster 1200	Cedarhurst	https://newyork.craigslist.org/lgi/mcy/d/cedarhurst-2005-harley-davidson/7068202352.html
+115	4000	newyork	2018	2000	400	kawasaki	ninja 400 abs	Kawasaki Ninja 400 ABS low miles Black and Red	Rego Park	https://newyork.craigslist.org/que/mcy/d/forest-hills-kawasaki-ninja-400-abs-low/7070440775.html
+212	4000	newjersey	2004	N/A	1100	Honda	Shadow	2004 Honda Shadow 1100	Madison	https://newjersey.craigslist.org/mcy/d/madison-2004-honda-shadow-1100/7072643194.html
+267	4000	newjersey	2007	2500	650	Hond	XR 650L	2007 Honda XR650L	Northport	https://newyork.craigslist.org/lgi/mcy/d/northport-2007-honda-xr650l/7081205965.html
+132	4000	newyork	N/A	N/A	N/A	harley	davidson xlh1000	1981 sportster chopper	West islip	https://newyork.craigslist.org/lgi/mcy/d/west-islip-1981-sportster-chopper/7069297914.html
+13	4000	newyork	2007	2500	650	Hond	XR 650L	2007 Honda XR650L	Northport	https://newyork.craigslist.org/lgi/mcy/d/northport-2007-honda-xr650l/7081205965.html
+124	4000	newyork	N/A	5000	N/A	suzuki	gsxr 1000	2003 Suzuki gsxr1000	Midwood	https://newyork.craigslist.org/brk/mcy/d/brooklyn-2003-suzuki-gsxr1000/7069688790.html
+99	4000	newyork	N/A	N/A	N/A	honda	cb750	Kawasaki Ninja 650	N/A	https://newyork.craigslist.org/wch/mcy/d/rye-kawasaki-ninja-650/7072114414.html
+120	4000	newyork	2008	22600	600	Honda	CBR600rr	Honda CBR600 Sport Motorcycle	Queens - Long Island	https://newyork.craigslist.org/lgi/mcy/d/bellerose-honda-cbr600-sport-motorcycle/7069842708.html
+102	4000	newyork	2016	5	250	honda	rebel 250	As is 2016 Honda Rebel with less than 5 miles	Inwood / Wash Hts	https://newyork.craigslist.org/mnh/mcy/d/new-york-as-is-2016-honda-rebel-with/7071770152.html
+253	4000	newjersey	2004	N/A	N/A	suzuki	gsxr 750	2004 gsxr 750 for sale	Newark	https://newjersey.craigslist.org/mcy/d/newark-2004-gsxr-750-for-sale/7063816826.html
+89	4000	newyork	N/A	N/A	N/A	honda	cbr1000rr	HONDA CBR 1000RR	Bushwick	https://newyork.craigslist.org/brk/mcy/d/brooklyn-honda-cbr-1000rr/7073245528.html
+226	4000	newjersey	2005	8500	N/A	honda	xr650l	2005 Honda 650l	North Arlington	https://newjersey.craigslist.org/mcy/d/north-arlington-2005-honda-650l/7070188655.html

@@ -1,17 +1,15 @@
-{% extends "base.html" %}
-{% block title %}Home{% endblock %}
+{% extends 'base.html' %}
+
 {% block body %}
-<div >
   <h1>CL Vehicle Shopper</h1>
-  <p >Search the Entire Country or Selected Regions</p>
-</div>
-<div>
-    <form action="/find-motorcycles.py">
-        <label for="search_regions">Areas to search:</label>
-        <input type="text" id="search_regions" name="search_regions"><br><br>
-        <label for="query">Search:</label>
-        <input type="text" id="query" name="query"><br><br>
-        <input type="submit" value="Submit">
-      </form>
-</div>
+  {% from "includes/_formhelpers.html" import render_field %}
+  <form method="POST" action="">
+    <div class="form-group">
+      {{ render_field(form.query, class_="form-control") }}
+    </div>
+    <div class="form-group">
+      {{ render_field(form.max_price, class_="form-control", id="editor") }}
+    </div>
+    <p><input class="btn btn-primary" type="submit" value="Submit">
+  </form>
 {% endblock %}

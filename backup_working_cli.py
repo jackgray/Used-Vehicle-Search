@@ -28,13 +28,6 @@ parser.add_argument('-max', '--max_price')
 parser.add_argument('-i', '--ignore',  help='ignore results with these words in them (separated by comma (,) no spaces)')
 args = parser.parse_args()
 
-
-# # Set up region search trie for matching craigslist regions for url prefix
-# t = pygtrie.StringTree()
-# t['nyc/newyork'] = 'newyork'
-# t['newjersey/jersey/nj'] = 'newjersey'
-
-# pygtrie alternative
 # Define search region dictionary for CLI user input
 regions = {}
 regions[('nyc', 'ny', 'new york', 'newyork')] = 'newyork'
@@ -346,7 +339,7 @@ if debug == True:
 
 # Finer filter: exclude listings with these words
 if args.ignore == 'default':
-    ignore = ['parts', 'tank', 'motor', 'engine', 'tow', 'tag', 'dirt', 'chopper',  'wanted', 'manual', 'finance', 'approved', 'zero', 'financing', 'atv', '50', 'single-cylinder', 'can-am', 'ryker', 'spyder', 'camper', 'lineup']
+    ignore = ['parts', 'tank', 'motor', 'engine', 'tow', 'tag', 'dirt', 'chopper',  'wanted', 'manual', 'finance', 'approved', 'zero', 'financing', 'atv', '50', 'scooter', 'single-cylinder', 'can-am', 'ryker', 'spyder', 'camper', 'lineup']
     for i in ignore:
         print('ignore default: ', i)
 elif args.ignore:
